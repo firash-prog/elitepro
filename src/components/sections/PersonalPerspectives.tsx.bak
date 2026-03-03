@@ -1,0 +1,166 @@
+"use client";
+
+import React, { useEffect, useRef } from "react";
+import { useScroll, useTransform, motion, useSpring } from "framer-motion";
+
+interface Testimony {
+  quote: string;
+  name: string;
+  age: number;
+  profession: string;
+}
+
+const testimonials: Testimony[] = [
+  {
+    quote: "“I’ve been on a waitlist for months, and every day feels like a battle. The system is so slow to respond, and there’s no help for people in immediate crisis.” Sarah’s experience emphasises the urgency of addressing delays in mental health support.",
+    name: "Sarah",
+    age: 29,
+    profession: "Marketing Professional",
+  },
+  {
+    quote: "“Every therapist I see has a different idea of what’s wrong with me, but none seem to get it right. It’s exhausting to be reassessed constantly without real progress.” John’s frustration underscores the challenges of inconsistent diagnoses.",
+    name: "John",
+    age: 35,
+    profession: "Software Engineer",
+  },
+  {
+    quote: "“I’ve had to switch therapists multiple times, and every time I do, it feels like starting from square one.” Emily’s experiences highlight the instability and lack of continuity in mental health care.",
+    name: "Emily",
+    age: 24,
+    profession: "Student",
+  },
+  {
+    quote: "“It’s hard to find a therapist who understands my cultural background. I often feel like they don’t get the unique pressures I face, which makes it harder to open up.” Alex’s struggle reflects the need for culturally competent care.",
+    name: "Alex",
+    age: 31,
+    profession: "Social Worker",
+  },
+  {
+    quote: "“There’s so much stigma around mental health that even when I reach out for help, I feel ashamed. The system doesn’t support openness, which makes it harder.” Kevin’s experience highlights the emotional toll of stigma in seeking mental health support.",
+    name: "Kevin",
+    age: 42,
+    profession: "Architect",
+  },
+  {
+    quote: "“The mental health system feels like it’s constantly playing catch-up. By the time you get the help you need, it’s already too late for so many people.” Olivia’s frustration speaks to the slow response in providing timely care.",
+    name: "Olivia",
+    age: 27,
+    profession: "Nurse",
+  },
+];
+
+const CharacterReveal = ({ text, progress }: { text: string; progress: any }) => {
+  const words = text.split(" ");
+  return (
+    <div className="flex flex-wrap">
+      {words.map((word, i) => {
+        const start = i / words.length;
+        const end = (i + 1) / words.length;
+        const opacity = useTransform(progress, [start, end], [0.1, 1]);
+        
+        return (
+          <motion.span
+            key={i}
+            style={{ opacity }}
+            className="mr-[0.25em] mb-[0.1em]"
+          >
+            {word}
+          </motion.span>
+        );
+      })}
+    </div>
+  );
+};
+
+const StoryItem = ({ story, index }: { story: Testimony; index: number }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  const springConfig = { stiffness: 100, damping: 30, restDelta: 0.001 };
+  const smoothProgress = useSpring(scrollYProgress, springConfig);
+
+  // Parallax effect for the text vs background
+  const y = useTransform(smoothProgress, [0, 1], [100, -100]);
+  const opacity = useTransform(smoothProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
+
+  return (
+    <div 
+      ref={ref}
+      className="min-h-screen flex items-center justify-center relative mb-[20vh]"
+    >
+      <motion.div 
+        style={{ y, opacity }}
+        className="w-full max-w-[800px] px-8"
+      >
+        <div className="text-[32px] font-light leading-[1.4] tracking-[-0.01em] text-white">
+          <CharacterReveal text={story.quote} progress={smoothProgress} />
+        </div>
+        
+        <motion.div 
+          className="mt-12 flex items-center gap-4 text-[10px] tracking-[0.2em] font-medium uppercase text-white/60"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
+          <div className="w-[4px] h-[4px] bg-white rounded-full" />
+          <span>
+            {story.name}, {story.age} 
+            <span className="opacity-50"> - {story.profession}</span>
+          </span>
+        </motion.div>
+      </motion.div>
+    </div>
+  );
+};
+
+export default function PersonalPerspectives() {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  return (
+    <section 
+      ref={sectionRef}
+      className="relative bg-background overflow-hidden border-t-[0.5px] border-white/20"
+      style={{ paddingTop: '160px', paddingBottom: '160px' }}
+    >
+      <div className="container relative z-10">
+        <div className="grid grid-cols-12 gap-10">
+          {/* Sticky Intro Sidebar */}
+          <div className="col-span-12 lg:col-span-4 lg:sticky lg:top-40 h-fit mb-24 lg:mb-0">
+            <h2 className="text-[12px] font-medium uppercase tracking-[0.1em] text-white flex items-center gap-3 mb-6">
+              <span className="w-1.5 h-1.5 bg-white rounded-full" />
+              Personal Perspectives
+            </h2>
+            <div className="mb-8">
+               <h3 className="text-[56px] leading-[1.1] font-normal tracking-[-0.01em] text-white mb-6">
+                 Personal<br />Perspectives
+               </h3>
+            </div>
+            <p className="max-w-[320px] text-[16px] leading-[1.6] text-white/50 font-normal">
+              Collective voices of human beings sharing their experiences with the current mental health care system. This is why we do what we do.
+            </p>
+          </div>
+
+          {/* Scrolling Stories */}
+          <div className="col-span-12 lg:col-span-8">
+            <div className="relative">
+              {testimonials.map((story, idx) => (
+                <StoryItem key={idx} story={story} index={idx} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Decorative background lines */}
+      <div className="absolute inset-0 pointer-events-none opacity-20">
+        <svg className="w-full h-full" viewBox="0 0 1440 1080" fill="none" preserveAspectRatio="xMidYMid slice">
+          <path d="M0 200C400 200 600 800 1440 800" stroke="white" strokeWidth="0.5" />
+          <path d="M0 800C400 800 800 200 1440 200" stroke="white" strokeWidth="0.5" />
+        </svg>
+      </div>
+    </section>
+  );
+}
