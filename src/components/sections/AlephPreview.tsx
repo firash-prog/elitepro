@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
 import AlephModel from '../canvas/AlephModel';
@@ -9,9 +9,17 @@ import AlephModel from '../canvas/AlephModel';
  * AlephPreview Component
  * 
  * Clones the final call-to-action section titled "Meet Aleph".
- * Enhanced with Framer Motion and refined typography.
+ * Enhanced with Framer Motion and 3D Canvas integration.
  */
 const AlephPreview: React.FC = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return <section className="min-h-screen bg-[#051622]" />;
+
   return (
     <section
       className="aleph relative min-h-screen py-[120px] flex flex-col items-center justify-center text-center overflow-hidden bg-[#051622]"
