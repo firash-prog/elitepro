@@ -1,9 +1,20 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
 const Hero = () => {
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -28,50 +39,112 @@ const Hero = () => {
   };
 
   return (
-    <section 
+    <section
       className="hero relative min-h-screen w-full flex items-center overflow-hidden pt-[120px] pb-[120px]"
       style={{
         backgroundColor: '#051622',
       }}
     >
+      {/* Quantum Particles */}
+      {init && (
+        <Particles
+          id="tsparticles"
+          className="absolute inset-0 z-0"
+          options={{
+            fpsLimit: 120,
+            interactivity: {
+              events: {
+                onHover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+              },
+              modes: {
+                repulse: {
+                  distance: 100,
+                  duration: 0.4,
+                },
+              },
+            },
+            particles: {
+              color: {
+                value: "#FFFFFF",
+              },
+              links: {
+                color: "#FFFFFF",
+                distance: 150,
+                enable: true,
+                opacity: 0.05,
+                width: 1,
+              },
+              move: {
+                direction: "none",
+                enable: true,
+                outModes: {
+                  default: "bounce",
+                },
+                random: true,
+                speed: 0.5,
+                straight: false,
+              },
+              number: {
+                density: {
+                  enable: true,
+                },
+                value: 80,
+              },
+              opacity: {
+                value: 0.1,
+              },
+              shape: {
+                type: "circle",
+              },
+              size: {
+                value: { min: 1, max: 3 },
+              },
+            },
+            detectRetina: true,
+          }}
+        />
+      )}
       {/* Background with fluid gradient glow and divider paths */}
       <div className="absolute inset-0 pointer-events-none z-0">
-        <div 
+        <div
           className="absolute inset-0 opacity-40"
           style={{
             background: 'radial-gradient(circle at 50% 50%, #1a4b63 0%, #051622 70%)',
           }}
         />
-        <svg 
+        <svg
           className="absolute bottom-0 left-0 w-full h-full"
-          viewBox="0 0 1920 1080" 
-          fill="none" 
+          viewBox="0 0 1920 1080"
+          fill="none"
           preserveAspectRatio="none"
           style={{ height: '100%', width: '100%' }}
         >
-          <path 
-            d="M0 1080L1920 0" 
-            stroke="rgba(255, 255, 255, 0.08)" 
+          <path
+            d="M0 1080L1920 0"
+            stroke="rgba(255, 255, 255, 0.08)"
             strokeWidth="1"
           />
-          <path 
-            d="M0 0L1920 1080" 
-            stroke="rgba(255, 255, 255, 0.05)" 
+          <path
+            d="M0 0L1920 1080"
+            stroke="rgba(255, 255, 255, 0.05)"
             strokeWidth="1"
           />
         </svg>
       </div>
 
-      <motion.div 
+      <motion.div
         className="container relative z-10 mx-auto px-[5%] max-w-[1440px] w-full h-full flex flex-col md:flex-row justify-between items-start md:items-end"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        
+
         {/* Left Column: Heading and CTA */}
         <div className="column flex flex-col gap-12 max-w-[720px]">
-          <motion.h1 
+          <motion.h1
             className="heading text-white leading-[1.1] tracking-[-0.02em] font-light"
             style={{ fontSize: 'clamp(3rem, 8vw, 5rem)' }}
             variants={itemVariants}
@@ -81,22 +154,22 @@ const Hero = () => {
             <div>health journey</div>
           </motion.h1>
 
-          <motion.a 
-            href="/aleph" 
+          <motion.a
+            href="/aleph"
             className="group relative flex items-center gap-4 w-fit py-4"
             variants={itemVariants}
           >
             {/* Start Button with Dot and Hover Effect */}
             <div className="relative flex items-center justify-center">
-              <div 
+              <div
                 className="w-[10px] h-[10px] rounded-full bg-white transition-transform duration-500 ease-out group-hover:scale-[0.6]"
               />
-              <div 
+              <div
                 className="absolute w-[44px] h-[44px] border border-white/20 rounded-full transition-all duration-500 ease-out group-hover:border-white/60 group-hover:scale-110"
               />
             </div>
-            
-            <div 
+
+            <div
               className="label text-white uppercase font-medium tracking-[0.1em] text-[0.875rem] flex gap-2"
               aria-label="Start your journey"
             >
@@ -114,11 +187,11 @@ const Hero = () => {
         </div>
 
         {/* Right Column: Description Text */}
-        <motion.div 
+        <motion.div
           className="column mt-12 md:mt-0 md:max-w-[320px] lg:max-w-[400px]"
           variants={itemVariants}
         >
-          <p 
+          <p
             className="paragraph text-[#EBEBEB] font-light leading-[1.6] tracking-[0.01em]"
             style={{ fontSize: '1.5rem' }}
           >
@@ -129,7 +202,7 @@ const Hero = () => {
 
       {/* Aesthetic Background Divider Lines (as per original structure) */}
       <div className="background absolute inset-0 pointer-events-none">
-        <svg 
+        <svg
           className="divider-svg w-full h-full opacity-20"
           aria-hidden="true"
         >

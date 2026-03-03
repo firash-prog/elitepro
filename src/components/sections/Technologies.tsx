@@ -1,7 +1,7 @@
 "use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
 const Technologies: React.FC = () => {
   const containerVariants = {
@@ -26,11 +26,11 @@ const Technologies: React.FC = () => {
   return (
     <section className="technologies relative py-[120px] bg-[#051622] overflow-hidden">
       <div className="container relative z-10 flex flex-col md:flex-row gap-20">
-        
+
         {/* Left Column - Large Vertical Heading */}
         <div className="column flex-1">
           <div className="sticky top-[120px]">
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
@@ -41,17 +41,17 @@ const Technologies: React.FC = () => {
               <div className="flex flex-col">
                 <div className="opacity-40">Innovating</div>
                 <div className="flex gap-x-4">
-                  <span>the</span> 
-                  <span className="text-white">future</span> 
+                  <span>the</span>
+                  <span className="text-white">future</span>
                   <span>of</span>
                 </div>
                 <div className="flex gap-x-4">
-                  <span className="text-white">mental</span> 
+                  <span className="text-white">mental</span>
                   <span>health</span>
                 </div>
               </div>
             </motion.h2>
-            
+
             <div className="mt-12 w-24 h-px bg-white/20" />
           </div>
         </div>
@@ -59,7 +59,7 @@ const Technologies: React.FC = () => {
         {/* Right Columns Column */}
         <div className="column flex-[1.2] flex flex-col">
           {/* Header Part */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -78,7 +78,7 @@ const Technologies: React.FC = () => {
           </motion.div>
 
           {/* Cards Grid wrapper */}
-          <motion.div 
+          <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -101,40 +101,69 @@ const Technologies: React.FC = () => {
                 title: "Applied Clinical\nBest Practices",
                 path: "M0 12 H40 V36 H80 V12 H120 V36 H160"
               }
-            ].map((tech) => (
-              <motion.div 
-                key={tech.id}
-                variants={itemVariants}
-                className="technology border-b border-white/10"
-              >
-                <button 
-                  className="group relative w-full text-left py-16 transition-all duration-500 hover:pl-4 flex items-center justify-between outline-none"
-                  data-cursor="scale"
+            ].map((tech) => {
+              const x = useMotionValue(0);
+              const y = useMotionValue(0);
+              const mouseXSpring = useSpring(x);
+              const mouseYSpring = useSpring(y);
+              const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["10deg", "-10deg"]);
+              const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-10deg", "10deg"]);
+
+              const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+                const width = rect.width;
+                const height = rect.height;
+                const mouseX = e.clientX - rect.left;
+                const mouseY = e.clientY - rect.top;
+                const xPct = mouseX / width - 0.5;
+                const yPct = mouseY / height - 0.5;
+                x.set(xPct);
+                y.set(yPct);
+              };
+
+              const handleMouseLeave = () => {
+                x.set(0);
+                y.set(0);
+              };
+
+              return (
+                <motion.div
+                  key={tech.id}
+                  variants={itemVariants}
+                  className="technology border-b border-white/10"
+                  onMouseMove={handleMouseMove}
+                  onMouseLeave={handleMouseLeave}
+                  style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
                 >
-                  <div className="inner relative z-10 flex items-center justify-between w-full">
-                    <div className="label text-[1.75rem] font-light leading-[1.2] text-[#EBEBEB] whitespace-pre-line">
-                      {tech.title}
-                      <sup className="super text-[0.75rem] ml-2 opacity-40 font-mono">{tech.id}</sup>
-                    </div>
-                    
-                    <div className="flex items-center gap-12">
-                      <svg className="technology-svg w-48 h-12 opacity-5 group-hover:opacity-40 transition-all duration-700" viewBox="0 0 192 48" fill="none" stroke="white" strokeWidth="1">
-                        <motion.path 
-                          d={tech.path} 
-                          initial={{ pathLength: 0 }}
-                          whileInView={{ pathLength: 1 }}
-                          transition={{ duration: 1.5, ease: "easeInOut" }}
-                        />
-                      </svg>
-                      
-                      <div className="w-8 h-8 flex items-center justify-center border border-white/10 rounded-full group-hover:bg-white group-hover:text-black transition-all duration-500">
-                        <span className="text-xl font-light">+</span>
+                  <button
+                    className="group relative w-full text-left py-16 transition-all duration-500 hover:pl-4 flex items-center justify-between outline-none"
+                    data-cursor="scale"
+                  >
+                    <div className="inner relative z-10 flex items-center justify-between w-full" style={{ transform: "translateZ(50px)" }}>
+                      <div className="label text-[1.75rem] font-light leading-[1.2] text-[#EBEBEB] whitespace-pre-line">
+                        {tech.title}
+                        <sup className="super text-[0.75rem] ml-2 opacity-40 font-mono">{tech.id}</sup>
+                      </div>
+
+                      <div className="flex items-center gap-12">
+                        <svg className="technology-svg w-48 h-12 opacity-5 group-hover:opacity-40 transition-all duration-700" viewBox="0 0 192 48" fill="none" stroke="white" strokeWidth="1">
+                          <motion.path
+                            d={tech.path}
+                            initial={{ pathLength: 0 }}
+                            whileInView={{ pathLength: 1 }}
+                            transition={{ duration: 1.5, ease: "easeInOut" }}
+                          />
+                        </svg>
+
+                        <div className="w-8 h-8 flex items-center justify-center border border-white/10 rounded-full group-hover:bg-white group-hover:text-black transition-all duration-500">
+                          <span className="text-xl font-light">+</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </button>
-              </motion.div>
-            ))}
+                  </button>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </div>
       </div>
