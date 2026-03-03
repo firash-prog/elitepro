@@ -2,13 +2,14 @@ import { createTheme } from '@radix-ui/react-themes';
 
 export const theme = createTheme({
   colors: {
-    primary: '#5f27cd',
-    secondary: '#0abde3',
-    accent: '#ff6b81',
+    primary: '#FFFFFF',
+    secondary: '#1a4b63',
+    accent: '#FFFFFF',
+    background: '#051622',
   },
   fonts: {
-    body: 'Arial, sans-serif',
-    heading: 'Georgia, serif',
+    body: '"Inter", sans-serif',
+    heading: '"Inter", sans-serif',
   }
 });
 
