@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useScroll, useTransform, useSpring, MotionValue } from "framer-motion";
 
 /**
  * VisionScroll Component
@@ -12,10 +12,6 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 const VisionScroll = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-
-  // The `mounted` state and `useEffect` are no longer needed here as the scroll logic
-  // has been moved into `VisionScrollContent`, which will handle its own mounting.
-  // The instruction implies removing the `if (!mounted)` check.
 
   return (
     <section
@@ -29,14 +25,11 @@ const VisionScroll = () => {
 };
 
 const VisionScrollContent = ({ containerRef }: { containerRef: React.RefObject<HTMLDivElement | null> }) => {
-  // Track scroll progress of the entire section
-  // The section is tall (e.g. 500vh) to allow for slow cinematic transitions
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
   });
 
-  // Smooth the scroll progress
   const smoothProgress = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
@@ -44,10 +37,7 @@ const VisionScrollContent = ({ containerRef }: { containerRef: React.RefObject<H
   });
 
   return (
-    /* Sticky Container */
     <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
-
-      {/* Background Layer: Dynamic Lines or Gradients */}
       <div className="absolute inset-0 z-0 opacity-40">
         <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
           <motion.path
@@ -60,29 +50,35 @@ const VisionScrollContent = ({ containerRef }: { containerRef: React.RefObject<H
         </svg>
       </div>
 
-      {/* Scene 1: Reconnecting with Nature (SVG Pattern) */}
       <Scene1 progress={smoothProgress} />
-
-      {/* Scene 2: Beyond Linear (Initial Assessment Spheres) */}
       <Scene2 progress={smoothProgress} />
-
-      {/* Scene 3: Ecosystem Connected */}
       <Scene3 progress={smoothProgress} />
-
-      {/* Unified Text Overlays */}
       <TextOverlays progress={smoothProgress} />
-
     </div>
   );
 };
 
-const Scene1 = ({ progress }: { progress: any }) => {
-  // Visibility and Scale for the Nature SVG
+const CircleItem = ({ i, progress }: { i: number; progress: MotionValue<number> }) => {
+  const pathLength = useTransform(progress, [0.2, 0.4], [0, 1]);
+  return (
+    <motion.circle
+      cx={(100 + 40 * Math.cos((i * Math.PI) / 3)).toFixed(1)}
+      cy={(100 + 40 * Math.sin((i * Math.PI) / 3)).toFixed(1)}
+      r="40"
+      fill="none"
+      stroke="white"
+      strokeWidth="0.5"
+      style={{ pathLength }}
+    />
+  );
+};
+
+const Scene1 = ({ progress }: { progress: MotionValue<number> }) => {
   const opacity = useTransform(progress, [0.15, 0.25, 0.45, 0.55], [0, 1, 1, 0]);
   const scale = useTransform(progress, [0.15, 0.55], [0.8, 1.2]);
   const rotate = useTransform(progress, [0.15, 0.55], [0, 15]);
+  const centerPathLength = useTransform(progress, [0.2, 0.4], [0, 1]);
 
-  // We manually build the flower of life nature pattern
   return (
     <motion.div
       style={{ opacity, scale, rotate }}
@@ -90,18 +86,7 @@ const Scene1 = ({ progress }: { progress: any }) => {
     >
       <svg className="nature-svg w-[600px] h-[600px] opacity-30" viewBox="0 0 200 200">
         {[...Array(6)].map((_, i) => (
-          <motion.circle
-            key={i}
-            cx={(100 + 40 * Math.cos((i * Math.PI) / 3)).toFixed(1)}
-            cy={(100 + 40 * Math.sin((i * Math.PI) / 3)).toFixed(1)}
-            r="40"
-            fill="none"
-            stroke="white"
-            strokeWidth="0.5"
-            style={{
-              pathLength: useTransform(progress, [0.2, 0.4], [0, 1]),
-            }}
-          />
+          <CircleItem key={i} i={i} progress={progress} />
         ))}
         <motion.circle
           cx="100"
@@ -110,19 +95,40 @@ const Scene1 = ({ progress }: { progress: any }) => {
           fill="none"
           stroke="white"
           strokeWidth="0.5"
-          style={{
-            pathLength: useTransform(progress, [0.2, 0.4], [0, 1]),
-          }}
+          style={{ pathLength: centerPathLength }}
         />
       </svg>
     </motion.div>
   );
 };
 
-const Scene2 = ({ progress }: { progress: any }) => {
-  // Opacity for the Linear vs Nonlinear step diagram
-  const opacity = useTransform(progress, [0.55, 0.65, 0.8, 0.9], [0, 1, 1, 0]);
+const StepItem = ({ text, i, progress, isLast }: { text: string; i: number; progress: MotionValue<number>; isLast: boolean }) => {
+  const y = useTransform(progress, [0.6, 0.8], [50 * (i % 2 === 0 ? 1 : -1), 0]);
+  const scale = useTransform(progress, [0.6, 0.8], [0.9, 1]);
+  const scaleX = useTransform(progress, [0.65 + i * 0.02, 0.7 + i * 0.02], [0, 1]);
 
+  return (
+    <React.Fragment>
+      <motion.div
+        className="flex flex-col items-center group"
+        style={{ y, scale }}
+      >
+        <div className="w-40 h-40 rounded-full border border-white/20 flex items-center justify-center p-6 text-center text-[11px] uppercase tracking-widest leading-tight transition-colors duration-500 hover:border-white/60">
+          {text}
+        </div>
+      </motion.div>
+      {!isLast && (
+        <motion.div
+          className="hidden md:block w-8 h-[1px] bg-white/20"
+          style={{ scaleX }}
+        />
+      )}
+    </React.Fragment>
+  );
+};
+
+const Scene2 = ({ progress }: { progress: MotionValue<number> }) => {
+  const opacity = useTransform(progress, [0.55, 0.65, 0.8, 0.9], [0, 1, 1, 0]);
   const steps = [
     "Understand the Patient",
     "Initial Assessment",
@@ -139,36 +145,17 @@ const Scene2 = ({ progress }: { progress: any }) => {
     >
       <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 px-10">
         {steps.map((text, i) => (
-          <React.Fragment key={text}>
-            <motion.div
-              className="flex flex-col items-center group"
-              style={{
-                y: useTransform(progress, [0.6, 0.8], [50 * (i % 2 === 0 ? 1 : -1), 0]),
-                scale: useTransform(progress, [0.6, 0.8], [0.9, 1])
-              }}
-            >
-              <div className="w-40 h-40 rounded-full border border-white/20 flex items-center justify-center p-6 text-center text-[11px] uppercase tracking-widest leading-tight transition-colors duration-500 hover:border-white/60">
-                {text}
-              </div>
-            </motion.div>
-            {i < steps.length - 1 && (
-              <motion.div
-                className="hidden md:block w-8 h-[1px] bg-white/20"
-                style={{
-                  scaleX: useTransform(progress, [0.65 + i * 0.02, 0.7 + i * 0.02], [0, 1])
-                }}
-              />
-            )}
-          </React.Fragment>
+          <StepItem key={text} text={text} i={i} progress={progress} isLast={i === steps.length - 1} />
         ))}
       </div>
     </motion.div>
   );
 };
 
-const Scene3 = ({ progress }: { progress: any }) => {
+const Scene3 = ({ progress }: { progress: MotionValue<number> }) => {
   const opacity = useTransform(progress, [0.85, 0.95], [0, 1]);
   const scale = useTransform(progress, [0.85, 1], [1.1, 1]);
+  const pathLength = useTransform(progress, [0.85, 0.95], [0, 1]);
 
   return (
     <motion.div
@@ -182,11 +169,10 @@ const Scene3 = ({ progress }: { progress: any }) => {
             d="M 0 0 L 120 0"
             stroke="white"
             strokeWidth="1"
-            style={{ pathLength: useTransform(progress, [0.85, 0.95], [0, 1]) }}
+            style={{ pathLength }}
           />
         </svg>
         <div className="relative w-[400px] h-[400px] mx-auto flex items-center justify-center">
-          {/* Ecosystem SVG concept - Concentric Rotating Mandala */}
           <motion.div
             className="absolute inset-0"
             animate={{ rotate: 360 }}
@@ -204,7 +190,6 @@ const Scene3 = ({ progress }: { progress: any }) => {
               <circle cx="50" cy="50" r="25" fill="none" stroke="white" strokeWidth="0.05" />
             </svg>
           </motion.div>
-
           <div className="relative z-10 text-[2.5rem] font-extralight tracking-[0.1em] text-white/90">
             CONNECTED
           </div>
@@ -214,8 +199,7 @@ const Scene3 = ({ progress }: { progress: any }) => {
   );
 };
 
-const TextOverlays = ({ progress }: { progress: any }) => {
-  // Array of sections based on content and scroll points
+const TextOverlays = ({ progress }: { progress: MotionValue<number> }) => {
   const content = [
     {
       label: "Vision",
@@ -262,7 +246,7 @@ const TextOverlays = ({ progress }: { progress: any }) => {
 interface ContentBlockProps {
   label: string;
   paragraph: string;
-  progress: any;
+  progress: MotionValue<number>;
   range: number[];
 }
 
@@ -281,7 +265,6 @@ const ContentBlock = ({ label, paragraph, progress, range }: ContentBlockProps) 
             <div className="w-1.5 h-1.5 bg-white rounded-full shrink-0 shadow-[0_0_10px_white]" />
             <span className="text-label text-[14px] font-medium tracking-[0.2em] uppercase text-white/60">{label}</span>
           </div>
-
           <div className="text-body-large text-[2rem] md:text-[3rem] font-extralight leading-[1.2] text-[#EBEBEB] max-w-3xl">
             {paragraph}
           </div>

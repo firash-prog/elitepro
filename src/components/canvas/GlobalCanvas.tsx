@@ -81,8 +81,8 @@ export default function GlobalCanvas() {
   const parallaxY = useTransform(smoothMouseY, (y) => (y - windowSize.height / 2) * 0.02);
   const flowerScale = useTransform(smoothMouseX, (x) => 1 + (Math.abs(x - windowSize.width / 2) / Math.max(windowSize.width, 1)) * 0.1);
 
-
-  // Prevent SSR rendering of browser-only logic
+  // We wrap the entire JSX in the mounted check to ensure hydration matches
+  // BUT the hooks (above) are ALWAYS called, satisfying the Rules of Hooks.
   if (!mounted) return null;
 
   return (
