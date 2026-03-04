@@ -1,207 +1,87 @@
-[2026-03-04 05:13:51.645] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\components\canvas\AlephModel.tsx:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.665] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\app\page.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.752] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\canvas\AlephModel.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.752] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\canvas\GlobalCanvas.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.752] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\canvas\ThreeBackground.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.752] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\canvas\WindingPath.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.752] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\layout\CinematicContainer.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.752] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\AlephPreview.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.752] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\Footer.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.752] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\Header.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.752] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\Hero.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.752] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\SplashScreen.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.752] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\Technologies.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.752] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\VisionScroll.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.753] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\components\canvas\GlobalCanvas.tsx:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.753] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\checkov\3.2.506-989ffb0b100780cfa223a7d3a4c65133/bin\checkov.cmd.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:51.753] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\checkov\3.2.506-989ffb0b100780cfa223a7d3a4c65133/bin\checkov.cmd // 3:The system cannot find the path specified.
-[2026-03-04 05:13:51.753] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\checkov\3.2.506-989ffb0b100780cfa223a7d3a4c65133/bin\checkov.cmd.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:51.755] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\components\canvas\ThreeBackground.tsx:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.756] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\components\canvas\WindingPath.tsx:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.757] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\components\layout\CinematicContainer.tsx:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.758] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\components\sections\AlephPreview.tsx:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.760] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\components\sections\Footer.tsx:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.761] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\components\sections\Header.tsx:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.763] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\components\sections\Hero.tsx:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.764] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\components\sections\SplashScreen.tsx:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.765] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\components\sections\Technologies.tsx:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.766] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\components\sections\VisionScroll.tsx:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.767] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:src\lib\db\schema.ts:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.769] [global] [info] [cache.cc:934] [on-demand] [trufflehog:lint:tailwind.config.ts:HEAD] already cached, not running linter
-[2026-03-04 05:13:51.809] [global] [info] [cache.cc:978] [on-demand] [prettier:format:next.config.ts:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.809] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\lib\db\schema.ts:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.810] [global] [info] [cache.cc:978] [on-demand] [prettier:format:tailwind.config.ts:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:51.884] [global] [info] [cache.cc:1117] [on-demand] [git-diff-check:lint:.env.example... (19 files):HEAD] Linter ran in 264ms
-[2026-03-04 05:13:51.888] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\app\globals.css:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:52.438] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:13:52.438] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:13:52.949] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:13:52.949] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:13:53.461] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin\python3.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.461] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin\python3 // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.461] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin\python3.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.461] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts\python3.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.461] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts\python3 // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.461] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts\python3.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.461] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin\python3.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.461] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin\python3 // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.461] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin\python3.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.644] [global] [info] [cache.cc:1117] [on-demand] [prettier:format:.vscode\launch.json:HEAD] Linter ran in 1968ms
-[2026-03-04 05:13:53.677] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\app\page.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.677] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\components\canvas\AlephModel.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.677] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\components\canvas\GlobalCanvas.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.677] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\components\canvas\ThreeBackground.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.677] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\components\canvas\WindingPath.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.677] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\components\layout\CinematicContainer.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.677] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\components\sections\AlephPreview.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.677] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\components\sections\Footer.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.677] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\components\sections\Header.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.677] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\components\sections\Hero.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.678] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\components\sections\SplashScreen.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.678] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\components\sections\Technologies.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.678] [global] [info] [cache.cc:978] [on-demand] [prettier:format:src\components\sections\VisionScroll.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:53.916] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin\python3.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.916] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin\python3 // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.916] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin\python3.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.916] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts\python3.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.916] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts\python3 // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.917] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts\python3.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.917] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin\python3.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.917] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin\python3 // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.917] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin\python3.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.920] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin\python3.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.920] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin\python3 // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.920] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin\python3.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.920] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts\python3.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.920] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts\python3 // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.921] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts\python3.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.921] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin\python3.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.921] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin\python3 // 3:The system cannot find the path specified.
-[2026-03-04 05:13:53.921] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin\python3.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:54.104] [global] [info] [cache.cc:1117] [on-demand] [prettier:format:next.config.ts... (3 files):HEAD] Linter ran in 2253ms
-[2026-03-04 05:13:54.127] [global] [info] [cache.cc:1117] [on-demand] [prettier:format:src\app\globals.css:HEAD] Linter ran in 2201ms
-[2026-03-04 05:13:54.649] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:13:54.649] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:13:55.945] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin\python3.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:55.945] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin\python3 // 3:The system cannot find the path specified.
-[2026-03-04 05:13:55.945] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin\python3.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:55.945] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts\python3.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:55.945] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts\python3 // 3:The system cannot find the path specified.
-[2026-03-04 05:13:55.945] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts\python3.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:55.945] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin\python3.bat // 3:The system cannot find the path specified.
-[2026-03-04 05:13:55.946] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin\python3 // 3:The system cannot find the path specified.
-[2026-03-04 05:13:55.946] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin\python3.exe // 3:The system cannot find the path specified.
-[2026-03-04 05:13:56.107] [global] [info] [runner.cc:106] Writing prettier predecessor error to F:\585\elitepro\.trunk\out\h8T1C.yaml
-[2026-03-04 05:13:56.612] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:13:56.612] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:13:57.127] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:13:57.127] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:13:59.428] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:13:59.437] [global] [info] [auto_delete_dir.cc:25] Error cleaning up auto delete directory: F:\585\elitepro\.trunk\tmp\trunk\pxoowau\4lruzkw, message: The system cannot find the path specified.
-[2026-03-04 05:13:59.439] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\canvas\GlobalCanvas.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:59.439] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\app\page.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:59.439] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\canvas\ThreeBackground.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:59.439] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\canvas\AlephModel.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:13:59.452] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:13:59.462] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:next.config.ts:HEAD] running linter (uncacheable)
-[2026-03-04 05:14:00.026] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:00.026] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:07.845] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:07.862] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\sYzcQ.yaml
-[2026-03-04 05:14:07.863] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\canvas\WindingPath.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:14:07.882] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:07.892] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:07.902] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\3gPfm.yaml
-[2026-03-04 05:14:07.902] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\layout\CinematicContainer.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:14:07.906] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\2vrI5.yaml
-[2026-03-04 05:14:07.906] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\AlephPreview.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:14:08.048] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:08.063] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\7CC20.yaml
-[2026-03-04 05:14:08.063] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\Footer.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:14:08.299] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:08.314] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\BaWEK.yaml
-[2026-03-04 05:14:08.314] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\Header.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:14:08.849] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:08.849] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:09.364] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:09.365] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:13.503] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:13.503] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:14.773] [global] [info] [cache.cc:1117] [on-demand] [checkov:lint:.vscode\launch.json:HEAD] Linter ran in 23020ms
-[2026-03-04 05:14:14.774] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\Hero.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:14:15.326] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:15.326] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:15.853] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:15.854] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:16.538] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:16.538] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:16.713] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:16.720] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:16.730] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\yaIhR.yaml
-[2026-03-04 05:14:16.731] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\SplashScreen.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:14:16.734] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\TVWMd.yaml
-[2026-03-04 05:14:16.734] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\Technologies.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:14:16.858] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:16.875] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\wpyIm.yaml
-[2026-03-04 05:14:16.875] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\components\sections\VisionScroll.tsx:HEAD] running linter (uncacheable)
-[2026-03-04 05:14:17.176] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:17.192] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\zC3nd.yaml
-[2026-03-04 05:14:17.192] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:src\lib\db\schema.ts:HEAD] running linter (uncacheable)
-[2026-03-04 05:14:17.333] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:17.350] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\XnkNq.yaml
-[2026-03-04 05:14:17.350] [global] [info] [cache.cc:978] [on-demand] [eslint:lint:tailwind.config.ts:HEAD] running linter (uncacheable)
-[2026-03-04 05:14:18.016] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:18.016] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:18.643] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:18.643] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:24.047] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:24.063] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\UHaQ7.yaml
-[2026-03-04 05:14:24.558] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:24.558] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:25.015] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:25.031] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\5Khfs.yaml
-[2026-03-04 05:14:25.080] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:25.094] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\TYI4C.yaml
-[2026-03-04 05:14:25.148] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:25.162] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\4VJFw.yaml
-[2026-03-04 05:14:25.412] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:25.418] [global] [warning] [linter.cc:1284] tmpfile was expected but not generated.
-[2026-03-04 05:14:25.422] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\XsFPe.yaml
-[2026-03-04 05:14:25.427] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\mTgeP.yaml
-[2026-03-04 05:14:25.430] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\zdLTw.yaml
-[2026-03-04 05:14:25.433] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\nURko.yaml
-[2026-03-04 05:14:25.436] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\nyCgP.yaml
-[2026-03-04 05:14:25.442] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\FU1nB.yaml
-[2026-03-04 05:14:25.446] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\UDcCl.yaml
-[2026-03-04 05:14:25.450] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\nqfEd.yaml
-[2026-03-04 05:14:25.454] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\kDm8a.yaml
-[2026-03-04 05:14:25.456] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\isqie.yaml
-[2026-03-04 05:14:25.460] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\cdqst.yaml
-[2026-03-04 05:14:25.464] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\hbdpZ.yaml
-[2026-03-04 05:14:25.468] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\5GrmJ.yaml
-[2026-03-04 05:14:25.472] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\zbzQD.yaml
-[2026-03-04 05:14:25.476] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\KbWwd.yaml
-[2026-03-04 05:14:25.480] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\HrlQ4.yaml
-[2026-03-04 05:14:25.483] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\CMoIb.yaml
-[2026-03-04 05:14:25.487] [global] [info] [runner.cc:106] Writing eslint predecessor error to F:\585\elitepro\.trunk\out\CG26J.yaml
-[2026-03-04 05:14:25.494] [global] [info] [runner.cc:106] Writing prettier predecessor error to F:\585\elitepro\.trunk\out\X3aHs.yaml
-[2026-03-04 05:14:25.634] [global] [info] [service.cc:528] [user-agent= sid=28] TX:virtual grpc::Status trunk::cli::lint::Service::Lint(grpc::ServerContext *, const proto::v1::LintRequest *, grpc::ServerWriter<proto::v1::LintResponse> *) status=OK
-[2026-03-04 05:14:25.636] [global] [info] [service.cc:585] [user-agent=lsp-proxy sid=28] RX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *)
-[2026-03-04 05:14:25.637] [global] [info] [service.cc:585] [user-agent=lsp-proxy sid=28] TX:virtual grpc::Status trunk::cli::lint::Service::GetLandingState(grpc::ServerContext *, const proto::v1::GetLandingStateRequest *, proto::v1::GetLandingStateResponse *) status=OK
-[2026-03-04 05:14:25.643] [global] [info] [service.cc:256] lint session ended sid=28
-[2026-03-04 05:14:25.643] [global] [info] [service.cc:258] [user-agent=lsp-proxy sid=28] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
-[2026-03-04 05:14:25.644] [global] [info] [service.cc:258] [user-agent=lsp-proxy sid=28] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
-[2026-03-04 05:14:25.644] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
-[2026-03-04 05:14:25.648] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
-[2026-03-04 05:14:25.657] [global] [info] [service.cc:256] lint session ended sid=17
-[2026-03-04 05:14:25.657] [global] [info] [service.cc:258] [user-agent=lsp-proxy sid=17] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
-[2026-03-04 05:14:25.658] [global] [info] [service.cc:258] [user-agent=lsp-proxy sid=17] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
-[2026-03-04 05:14:25.658] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
-[2026-03-04 05:14:25.691] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
-[2026-03-04 05:14:25.717] [global] [info] [service.cc:256] lint session ended sid=16
-[2026-03-04 05:14:25.717] [global] [info] [service.cc:258] [user-agent=lsp-proxy sid=16] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
-[2026-03-04 05:14:25.717] [global] [info] [service.cc:258] [user-agent=lsp-proxy sid=16] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
-[2026-03-04 05:14:25.717] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
-[2026-03-04 05:14:25.734] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
-[2026-03-04 05:14:26.786] [global] [info] [git_source_control.cc:517] Computing merge base between c3192ba1c5eefb7711d9904faf1a7eb66d02d544 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
-[2026-03-04 05:14:26.787] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:23:43.150] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2026-03-04 05:23:43.205] [global] [info] [git_source_control.cc:517] Computing merge base between 6056a1febcd16f62add3570311e135dd7ed68157 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:23:43.252] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:23:43.253] [global] [info] [session_context.cc:167] Making commit info with id: c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:23:43.253] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2026-03-04 05:23:43.314] [global] [info] [session_context.cc:193] Error creating commit info (reference: 9c9b4793141546fd8a9a7620462b11ff)
+[2026-03-04 05:23:43.314] [global] [info] [service.cc:227] [user-agent=lsp-proxy sid=n/a] lint session created sid=7 with the following options:
+cache_enabled: true, num_jobs: 6, session_type: 4, client_id: lsp-proxy, scope: 1
+[2026-03-04 05:23:43.515] [global] [info] [service.cc:145] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::Start(grpc::ServerContext *, const proto::v1::StartRequest *, grpc::ServerWriter<proto::v1::StartResponse> *) status=OK
+[2026-03-04 05:23:43.516] [global] [info] [grpc.cc:22] RX:virtual grpc::Status trunk::cli::UpgradeService::GetAvailableUpgrades(grpc::ServerContext *, const upgrade::proto::v1::GetAvailableUpgradesRequest *, grpc::ServerWriter<upgrade::proto::v1::GetAvailableUpgradesResponse> *)
+[2026-03-04 05:23:43.518] [global] [info] [cli_upgrade.cc:85] Checking for latest trunk prod version...
+[2026-03-04 05:23:43.518] [global] [info] [plugin_upgrade.cc:71] Querying latest version for plugin trunk
+[2026-03-04 05:23:44.063] [global] [info] [grpc.cc:26] TX:virtual grpc::Status trunk::cli::actions::Service::GetNotificationsStream(grpc::ServerContext *, const proto::v1::GetNotificationsStreamRequest *, grpc::ServerWriter<proto::v1::GetNotificationsStreamResponse> *) status=OK
+[2026-03-04 05:23:44.063] [global] [info] [git_source_control.cc:517] Computing merge base between 6056a1febcd16f62add3570311e135dd7ed68157 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:23:44.063] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:23:44.311] [global] [info] [cli_upgrade.cc:92] Successfully fetched latest trunk 1.25.0 version: prod
+[2026-03-04 05:23:45.002] [global] [warning] [release.cc:76] Querying ReleaseVersionService failed with message Endpoint is deprecated
+[2026-03-04 05:23:45.059] [global] [warning] [release.cc:142] Querying validated version from ReleaseVersionService failed with message Endpoint is deprecated
+[2026-03-04 05:23:45.060] [global] [info] [linter.cc:1078] Validated version for trufflehog not provided, or bypassed. Using fallback
+[2026-03-04 05:23:45.060] [global] [info] [linter.cc:1078] Validated version for osv-scanner not provided, or bypassed. Using fallback
+[2026-03-04 05:23:45.061] [global] [info] [linter.cc:1078] Validated version for checkov not provided, or bypassed. Using fallback
+[2026-03-04 05:23:45.061] [global] [info] [linter.cc:1078] Validated version for eslint not provided, or bypassed. Using fallback
+[2026-03-04 05:23:45.062] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.bat // 3:The system cannot find the path specified.
+[2026-03-04 05:23:45.062] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm // 3:The system cannot find the path specified.
+[2026-03-04 05:23:45.062] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.exe // 3:The system cannot find the path specified.
+[2026-03-04 05:23:47.019] [global] [warning] [release.cc:76] Querying ReleaseVersionService failed with message Endpoint is deprecated
+[2026-03-04 05:23:47.305] [global] [warning] [release.cc:76] Querying ReleaseVersionService failed with message Endpoint is deprecated
+[2026-03-04 05:23:47.935] [global] [info] [linter.cc:1078] Validated version for prettier not provided, or bypassed. Using fallback
+[2026-03-04 05:23:47.936] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.bat // 3:The system cannot find the path specified.
+[2026-03-04 05:23:47.936] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm // 3:The system cannot find the path specified.
+[2026-03-04 05:23:47.936] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.exe // 3:The system cannot find the path specified.
+[2026-03-04 05:23:48.033] [global] [info] [linter.cc:1078] Validated version for svgo not provided, or bypassed. Using fallback
+[2026-03-04 05:23:48.033] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.bat // 3:The system cannot find the path specified.
+[2026-03-04 05:23:48.033] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm // 3:The system cannot find the path specified.
+[2026-03-04 05:23:48.033] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.exe // 3:The system cannot find the path specified.
+[2026-03-04 05:23:50.972] [global] [info] [linter.cc:1078] Validated version for markdownlint not provided, or bypassed. Using fallback
+[2026-03-04 05:23:50.973] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.bat // 3:The system cannot find the path specified.
+[2026-03-04 05:23:50.973] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm // 3:The system cannot find the path specified.
+[2026-03-04 05:23:50.973] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.exe // 3:The system cannot find the path specified.
+[2026-03-04 05:23:53.482] [global] [info] [git_source_control.cc:517] Computing merge base between 6056a1febcd16f62add3570311e135dd7ed68157 and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:23:53.482] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:23:54.393] [global] [info] [linter.cc:1078] Validated version for yamllint not provided, or bypassed. Using fallback
+[2026-03-04 05:23:54.407] [global] [info] [linter.cc:1078] Validated version for trufflehog not provided, or bypassed. Using fallback
+[2026-03-04 05:23:54.409] [global] [info] [linter.cc:1078] Validated version for prettier not provided, or bypassed. Using fallback
+[2026-03-04 05:23:54.410] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.bat // 3:The system cannot find the path specified.
+[2026-03-04 05:23:54.410] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm // 3:The system cannot find the path specified.
+[2026-03-04 05:23:54.410] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.exe // 3:The system cannot find the path specified.
+[2026-03-04 05:23:54.455] [global] [info] [linter.cc:1078] Validated version for oxipng not provided, or bypassed. Using fallback
+[2026-03-04 05:23:54.628] [global] [info] [linter.cc:1078] Validated version for oxipng not provided, or bypassed. Using fallback
+[2026-03-04 05:23:55.090] [global] [info] [linter.cc:1791] Found config in plugin repo at C:\Users\Firash\AppData\Local\trunk\plugins\https---github-com-trunk-io-plugins\v1.7.5-4ebadccd80b22638\linters\yamllint\.yamllint.yaml
+[2026-03-04 05:23:55.597] [global] [warning] [release.cc:76] Querying ReleaseVersionService failed with message Endpoint is deprecated
+[2026-03-04 05:23:55.707] [global] [warning] [release.cc:76] Querying ReleaseVersionService failed with message Endpoint is deprecated
+[2026-03-04 05:23:56.019] [global] [warning] [release.cc:76] Querying ReleaseVersionService failed with message Endpoint is deprecated
+[2026-03-04 05:23:56.367] [global] [info] [linter.cc:1078] Validated version for yamllint not provided, or bypassed. Using fallback
+[2026-03-04 05:23:56.893] [global] [warning] [release.cc:44] GitHub releases lookup failed for 'https://api.github.com/repos/shssoichiro/oxipng/releases' code:403 body:{"message":"API rate limit exceeded for 188.53.114.178. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+[2026-03-04 05:23:56.910] [global] [warning] [release.cc:44] GitHub releases lookup failed for 'https://api.github.com/repos/trufflesecurity/trufflehog/releases' code:403 body:{"message":"API rate limit exceeded for 188.53.114.178. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+[2026-03-04 05:23:57.094] [global] [info] [grpc.cc:26] TX:virtual grpc::Status trunk::cli::UpgradeService::GetAvailableUpgrades(grpc::ServerContext *, const upgrade::proto::v1::GetAvailableUpgradesRequest *, grpc::ServerWriter<upgrade::proto::v1::GetAvailableUpgradesResponse> *) status=OK
+[2026-03-04 05:23:57.096] [global] [info] [service.cc:256] lint session ended sid=7
+[2026-03-04 05:23:57.096] [global] [info] [service.cc:258] [user-agent=lsp-proxy sid=7] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2026-03-04 05:23:57.097] [global] [info] [service.cc:258] [user-agent=lsp-proxy sid=7] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2026-03-04 05:23:57.097] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2026-03-04 05:23:57.098] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2026-03-04 05:23:57.243] [global] [warning] [release.cc:44] GitHub releases lookup failed for 'https://api.github.com/repos/shssoichiro/oxipng/releases' code:403 body:{"message":"API rate limit exceeded for 188.53.114.178. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+
+[2026-03-04 05:23:57.931] [global] [info] [linter.cc:1791] Found config in plugin repo at C:\Users\Firash\AppData\Local\trunk\plugins\https---github-com-trunk-io-plugins\v1.7.5-4ebadccd80b22638\linters\yamllint\.yamllint.yaml
+[2026-03-04 05:23:58.134] [global] [info] [grpc.cc:26] TX:virtual grpc::Status trunk::cli::UpgradeService::GetAvailableUpgrades(grpc::ServerContext *, const upgrade::proto::v1::GetAvailableUpgradesRequest *, grpc::ServerWriter<upgrade::proto::v1::GetAvailableUpgradesResponse> *) status=OK
+[2026-03-04 05:24:00.046] [global] [info] [notification_manager.cc:37] Writing to F:\585\elitepro\.trunk\notifications\trunk-upgrade.yaml
+[2026-03-04 05:24:07.963] [global] [info] [service.cc:256] lint session ended sid=2
+[2026-03-04 05:24:07.963] [global] [info] [service.cc:258] [user-agent=lsp-proxy sid=2] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2026-03-04 05:24:07.964] [global] [info] [service.cc:258] [user-agent=lsp-proxy sid=2] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2026-03-04 05:24:07.964] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2026-03-04 05:24:07.965] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2026-03-04 05:24:07.967] [global] [info] [service.cc:256] lint session ended sid=1
+[2026-03-04 05:24:07.967] [global] [info] [service.cc:258] [user-agent=lsp-proxy sid=1] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2026-03-04 05:24:07.967] [global] [info] [service.cc:258] [user-agent=lsp-proxy sid=1] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2026-03-04 05:24:07.967] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] RX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *)
+[2026-03-04 05:24:07.968] [global] [info] [service.cc:325] [user-agent=lsp-proxy sid=n/a] TX:virtual grpc::Status trunk::cli::lint::Service::End(grpc::ServerContext *, const proto::v1::EndRequest *, proto::v1::EndResponse *) status=OK
+[2026-03-04 05:24:12.780] [global] [info] [git_source_control.cc:517] Computing merge base between 328f109d7dc6672044776b57fc0375348ccb776e and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:24:12.781] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:24:15.577] [global] [info] [git_source_control.cc:517] Computing merge base between 328f109d7dc6672044776b57fc0375348ccb776e and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:24:15.577] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:24:17.913] [global] [info] [git_source_control.cc:517] Computing merge base between 328f109d7dc6672044776b57fc0375348ccb776e and c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:24:17.913] [global] [info] [git_source_control.cc:519] Resolved divergent commit as c3192ba1c5eefb7711d9904faf1a7eb66d02d544
+[2026-03-04 05:24:22.026] [global] [info] [git_source_control.cc:517] Computing merge base between 328f109d7dc6672044776b57fc0375348ccb776e and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:24:22.026] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e

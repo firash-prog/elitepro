@@ -134,7 +134,7 @@ export default function GlobalCanvas() {
               <circle cx="370" cy="575" r="150" />
               <circle cx="630" cy="575" r="150" />
             </g>
-          </svg>
+          </motion.svg>
         </div>
       </div>
 
@@ -208,7 +208,7 @@ export default function GlobalCanvas() {
             />
           </svg>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

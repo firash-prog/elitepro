@@ -10,3 +10,10 @@
 [03-04 05:07:27] [client.cc:19] GRPC Failed (error code INTERNAL): Can not detect upstream commit
 [03-04 05:07:27] [submission_buffer.cc:179] diagnostics buffer 6: Submission failed: Can not detect upstream commit
 [03-04 05:07:27] [shared_server_context.hh:133] Message processing failed: Can not detect upstream commit
+[03-04 05:23:37] [login.cc:52] GetUserRequest failed with status 16: No session provided 
+[03-04 05:23:38] [client.cc:19] GRPC Failed (error code INTERNAL): Can not detect upstream commit
+[03-04 05:23:39] [client.cc:19] GRPC Failed (error code INTERNAL): Can not detect upstream commit
+[03-04 05:23:43] [submission_buffer.cc:179] diagnostics buffer 0: Submission failed: Can not detect upstream commit
+[03-04 05:23:43] [submission_buffer.cc:179] diagnostics buffer 1: Submission failed: Can not detect upstream commit
+[03-04 05:23:43] [shared_server_context.hh:133] Message processing failed: Can not detect upstream commit
+[03-04 05:23:43] [shared_server_context.hh:133] Message processing failed: Can not detect upstream commit
