@@ -194,3 +194,9 @@ cache_enabled: true, num_jobs: 6, session_type: 4, client_id: lsp-proxy, scope: 
 [2026-03-04 05:44:29.790] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
 [2026-03-04 05:45:19.494] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
 [2026-03-04 05:45:19.495] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:46:00.612] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:46:00.613] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:46:02.696] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:46:02.696] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:46:05.420] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:46:05.421] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
