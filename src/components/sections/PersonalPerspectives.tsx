@@ -74,17 +74,17 @@ export default function PersonalPerspectives() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+      transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const },
     },
   };
 
   return (
     <section className="relative overflow-hidden bg-[#051622] py-[120px] select-none" ref={containerRef}>
-      
+
       <div className="container relative z-10 grid grid-cols-1 gap-[60px] lg:grid-cols-[40%_60%]">
         {/* Left Column: Fixed Header Info */}
         <div className="flex flex-col space-y-[32px]">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
@@ -98,7 +98,7 @@ export default function PersonalPerspectives() {
               <span className="block">Perspectives</span>
             </span>
           </motion.h2>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.6 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -107,16 +107,16 @@ export default function PersonalPerspectives() {
           >
             Collective voices of human beings sharing their experiences with the current mental health care system. This is why we do what we do.
           </motion.p>
-          
+
           <div className="mt-12 w-24 h-px bg-white/10" />
         </div>
 
         {/* Right Column: Interaction Area */}
-        <div 
+        <div
           className="relative h-[600px] overflow-y-auto pr-8 scrollbar-hide lg:h-[800px] mask-fade-edges"
           data-cursor="arrow"
         >
-          <motion.div 
+          <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -124,8 +124,8 @@ export default function PersonalPerspectives() {
             className="flex flex-col space-y-[100px] pb-40"
           >
             {stories.map((story) => (
-              <motion.div 
-                key={story.id} 
+              <motion.div
+                key={story.id}
                 variants={itemVariants}
                 className="group relative flex flex-col items-start transition-all duration-700 opacity-40 hover:opacity-100"
               >
@@ -133,7 +133,7 @@ export default function PersonalPerspectives() {
                   <p className="text-[1.5rem] md:text-[2rem] leading-[1.3] tracking-tight text-[#EBEBEB] mb-8 font-light">
                     {story.quote}
                   </p>
-                  
+
                   <div className="flex items-center space-x-4 text-[0.875rem] uppercase tracking-[0.2em]">
                     <span className="w-2 h-2 bg-white rounded-full" />
                     <span className="flex items-center gap-2">
@@ -142,7 +142,7 @@ export default function PersonalPerspectives() {
                     </span>
                   </div>
                 </div>
-                
+
                 {/* Visual accent line per story */}
                 <div className="mt-12 h-px w-full bg-white/10 origin-left scale-x-0 transition-transform duration-1000 group-hover:scale-x-100" />
               </motion.div>
@@ -153,11 +153,11 @@ export default function PersonalPerspectives() {
 
       {/* Background Decorative Element */}
       <div className="absolute inset-0 pointer-events-none z-0">
-        <svg 
-          className="absolute -right-[10%] top-[-20%] h-[150%] w-auto opacity-[0.03] text-white" 
-          viewBox="0 0 1000 1000" 
-          fill="none" 
-          stroke="currentColor" 
+        <svg
+          className="absolute -right-[10%] top-[-20%] h-[150%] w-auto opacity-[0.03] text-white"
+          viewBox="0 0 1000 1000"
+          fill="none"
+          stroke="currentColor"
           strokeWidth="0.5"
         >
           <circle cx="500" cy="500" r="300" />

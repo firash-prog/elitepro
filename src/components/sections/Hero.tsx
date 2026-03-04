@@ -33,7 +33,7 @@ const Hero = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.215, 0.61, 0.355, 1],
+        ease: [0.215, 0.61, 0.355, 1] as const,
       },
     },
   };
@@ -74,7 +74,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.div variants={itemVariants} className="mt-4">
-          <button 
+          <button
             onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
             className="btn-primary group"
           >
