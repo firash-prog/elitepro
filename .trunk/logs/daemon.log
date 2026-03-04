@@ -24,3 +24,191 @@
 [2026-03-04 06:26:29.493] [global] [info] [git_source_control.cc:519] Resolved divergent commit as e094919c3d984be5541538c39609e87a74b57762
 [2026-03-04 06:26:30.729] [global] [info] [git_source_control.cc:517] Computing merge base between e094919c3d984be5541538c39609e87a74b57762 and e094919c3d984be5541538c39609e87a74b57762
 [2026-03-04 06:26:30.729] [global] [info] [git_source_control.cc:519] Resolved divergent commit as e094919c3d984be5541538c39609e87a74b57762
+[2026-03-04 06:28:06.555] [global] [info] [git_source_control.cc:517] Computing merge base between e094919c3d984be5541538c39609e87a74b57762 and e094919c3d984be5541538c39609e87a74b57762
+[2026-03-04 06:28:06.555] [global] [info] [git_source_control.cc:519] Resolved divergent commit as e094919c3d984be5541538c39609e87a74b57762
+[2026-03-04 06:28:08.602] [global] [info] [git_source_control.cc:517] Computing merge base between e094919c3d984be5541538c39609e87a74b57762 and e094919c3d984be5541538c39609e87a74b57762
+[2026-03-04 06:28:08.602] [global] [info] [git_source_control.cc:519] Resolved divergent commit as e094919c3d984be5541538c39609e87a74b57762
+[2026-03-04 06:28:15.786] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and e094919c3d984be5541538c39609e87a74b57762
+[2026-03-04 06:28:15.787] [global] [info] [git_source_control.cc:519] Resolved divergent commit as e094919c3d984be5541538c39609e87a74b57762
+[2026-03-04 06:28:16.922] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and e094919c3d984be5541538c39609e87a74b57762
+[2026-03-04 06:28:16.922] [global] [info] [git_source_control.cc:519] Resolved divergent commit as e094919c3d984be5541538c39609e87a74b57762
+[2026-03-04 06:28:19.130] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:28:19.130] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:29:30.886] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:29:30.886] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:29:32.071] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:29:32.071] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:30:45.781] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:30:45.781] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:32:32.242] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:32:32.242] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:32:33.536] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:32:33.536] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:35:33.704] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:35:33.704] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:35:34.890] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:35:34.890] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:38:35.064] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:38:35.064] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:38:36.123] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:38:36.123] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:40:22.297] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:40:22.297] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:40:37.543] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:40:37.543] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:40:38.911] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:40:38.911] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:40:40.617] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:40:40.618] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:41:36.290] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:41:36.290] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:41:37.381] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:41:37.381] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:42:19.528] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:42:19.528] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:42:20.528] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:42:20.528] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:42:24.283] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:42:24.283] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:42:25.595] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:42:25.595] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:42:26.672] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:42:26.672] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:44:37.533] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:44:37.533] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:44:38.728] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:44:38.728] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:45:32.744] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:45:32.745] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:45:34.828] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:45:34.828] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:47:38.885] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:47:38.886] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:47:39.874] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:47:39.874] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:50:40.028] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:50:40.028] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:50:41.116] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:50:41.116] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:53:41.297] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:53:41.297] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:53:42.672] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:53:42.672] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:55:01.241] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:55:01.241] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:56:42.887] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:56:42.887] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:56:44.133] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:56:44.133] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:59:05.621] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:59:05.621] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:59:07.418] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:59:07.418] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:59:44.297] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:59:44.297] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:59:45.586] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 06:59:45.586] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:02:45.750] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:02:45.751] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:02:46.809] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:02:46.809] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:05:46.968] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:05:46.968] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:05:48.216] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:05:48.217] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:06:56.424] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:06:56.424] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:06:58.124] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:06:58.124] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:08:25.810] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:08:25.810] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:08:28.132] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:08:28.132] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:08:30.032] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:08:30.032] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:08:48.405] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:08:48.405] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:08:49.622] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:08:49.622] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:11:49.828] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:11:49.828] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:11:50.968] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:11:50.968] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:14:51.220] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:14:51.221] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:14:52.375] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:14:52.375] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:17:52.657] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:17:52.657] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:17:54.279] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:17:54.280] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:20:54.443] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:20:54.443] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:20:55.569] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:20:55.570] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:23:29.337] [global] [info] [runner.cc:154] Executing action trunk-upgrade-available.schedule.1h
+[2026-03-04 07:23:29.776] [global] [info] [grpc.cc:22] RX:virtual grpc::Status trunk::cli::UpgradeService::GetAvailableUpgrades(grpc::ServerContext *, const upgrade::proto::v1::GetAvailableUpgradesRequest *, grpc::ServerWriter<upgrade::proto::v1::GetAvailableUpgradesResponse> *)
+[2026-03-04 07:23:29.780] [global] [info] [cli_upgrade.cc:85] Checking for latest trunk prod version...
+[2026-03-04 07:23:29.782] [global] [info] [plugin_upgrade.cc:71] Querying latest version for plugin trunk
+[2026-03-04 07:23:30.989] [global] [info] [cli_upgrade.cc:92] Successfully fetched latest trunk 1.25.0 version: prod
+[2026-03-04 07:23:31.524] [global] [warning] [release.cc:76] Querying ReleaseVersionService failed with message Endpoint is deprecated
+[2026-03-04 07:23:31.680] [global] [warning] [release.cc:142] Querying validated version from ReleaseVersionService failed with message Endpoint is deprecated
+[2026-03-04 07:23:31.682] [global] [info] [linter.cc:1078] Validated version for trufflehog not provided, or bypassed. Using fallback
+[2026-03-04 07:23:31.682] [global] [info] [linter.cc:1078] Validated version for svgo not provided, or bypassed. Using fallback
+[2026-03-04 07:23:31.682] [global] [info] [linter.cc:1078] Validated version for markdownlint not provided, or bypassed. Using fallback
+[2026-03-04 07:23:31.682] [global] [info] [linter.cc:1078] Validated version for eslint not provided, or bypassed. Using fallback
+[2026-03-04 07:23:31.682] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.bat // 3:The system cannot find the path specified.
+[2026-03-04 07:23:31.682] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm // 3:The system cannot find the path specified.
+[2026-03-04 07:23:31.682] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.exe // 3:The system cannot find the path specified.
+[2026-03-04 07:23:31.683] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.bat // 3:The system cannot find the path specified.
+[2026-03-04 07:23:31.683] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.bat // 3:The system cannot find the path specified.
+[2026-03-04 07:23:31.683] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm // 3:The system cannot find the path specified.
+[2026-03-04 07:23:31.683] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.exe // 3:The system cannot find the path specified.
+[2026-03-04 07:23:31.683] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm // 3:The system cannot find the path specified.
+[2026-03-04 07:23:31.683] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.exe // 3:The system cannot find the path specified.
+[2026-03-04 07:23:32.872] [global] [warning] [release.cc:76] Querying ReleaseVersionService failed with message Endpoint is deprecated
+[2026-03-04 07:23:33.495] [global] [info] [linter.cc:1078] Validated version for osv-scanner not provided, or bypassed. Using fallback
+[2026-03-04 07:23:34.159] [global] [info] [linter.cc:1078] Validated version for prettier not provided, or bypassed. Using fallback
+[2026-03-04 07:23:34.160] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.bat // 3:The system cannot find the path specified.
+[2026-03-04 07:23:34.160] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm // 3:The system cannot find the path specified.
+[2026-03-04 07:23:34.160] [global] [warning] [resolve_binary.cc:46] is_regular_file check failed for for C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin\npm.exe // 3:The system cannot find the path specified.
+[2026-03-04 07:23:34.177] [global] [info] [linter.cc:1078] Validated version for checkov not provided, or bypassed. Using fallback
+[2026-03-04 07:23:34.224] [global] [info] [linter.cc:1078] Validated version for yamllint not provided, or bypassed. Using fallback
+[2026-03-04 07:23:34.670] [global] [warning] [release.cc:76] Querying ReleaseVersionService failed with message Endpoint is deprecated
+[2026-03-04 07:23:34.992] [global] [info] [linter.cc:1791] Found config in plugin repo at C:\Users\Firash\AppData\Local\trunk\plugins\https---github-com-trunk-io-plugins\v1.7.5-4ebadccd80b22638\linters\yamllint\.yamllint.yaml
+[2026-03-04 07:23:34.992] [global] [info] [linter.cc:1078] Validated version for oxipng not provided, or bypassed. Using fallback
+[2026-03-04 07:23:36.457] [global] [warning] [release.cc:76] Querying ReleaseVersionService failed with message Endpoint is deprecated
+[2026-03-04 07:23:38.349] [global] [info] [grpc.cc:26] TX:virtual grpc::Status trunk::cli::UpgradeService::GetAvailableUpgrades(grpc::ServerContext *, const upgrade::proto::v1::GetAvailableUpgradesRequest *, grpc::ServerWriter<upgrade::proto::v1::GetAvailableUpgradesResponse> *) status=OK
+[2026-03-04 07:23:39.991] [global] [info] [notification_manager.cc:37] Writing to F:\585\elitepro\.trunk\notifications\trunk-upgrade.yaml
+[2026-03-04 07:23:55.741] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:23:55.741] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:23:57.080] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:23:57.080] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:26:57.254] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:26:57.254] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:26:58.169] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:26:58.169] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:29:58.424] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:29:58.424] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:29:59.516] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:29:59.516] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:32:59.939] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:32:59.940] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:33:00.987] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:33:00.987] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:36:01.180] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:36:01.180] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:36:02.176] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:36:02.176] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:39:02.351] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:39:02.351] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:39:03.364] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:39:03.364] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:42:03.511] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:42:03.511] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:42:04.448] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:42:04.448] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:45:04.630] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:45:04.630] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:45:05.977] [global] [info] [git_source_control.cc:517] Computing merge base between ce82eb64628f87a45603169e347608c498a3f789 and ce82eb64628f87a45603169e347608c498a3f789
+[2026-03-04 07:45:05.977] [global] [info] [git_source_control.cc:519] Resolved divergent commit as ce82eb64628f87a45603169e347608c498a3f789
