@@ -1,0 +1,23 @@
+trunk_cli_version: 1.25.0
+title: "Error while executing: bun.lock"
+report:
+  - " CreateProcess failed: The process cannot access the file because it is being used by another process."
+  - command: |
+      'C:\Users\Firash\AppData\Local\trunk\tools\osv-scanner\2.3.3-26eb5d87a2b1eadff549407f90c7517d\osv-scanner.exe' --lockfile=bun.lock --format json
+    stdin_path: (none)
+    run_from: F:\585\elitepro\
+    timeout: 10m
+    rerun: (cd F:\585\elitepro\; env -i 'PATH=C:\Users\Firash\AppData\Local\trunk\tools\osv-scanner\2.3.3-26eb5d87a2b1eadff549407f90c7517d;C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Users\Firash\AppData\Local\trunk\tools\osv-scanner\2.3.3-26eb5d87a2b1eadff549407f90c7517d;C:\Users\Firash\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\Firash\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Go\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Git\cmd;C:\Users\Firash\.local\bin;C:\Users\Firash\AppData\Local\Microsoft\WindowsApps;C:\Users\Firash\AppData\Local\GitHubDesktop\bin;C:\Users\Firash\AppData\Local\Programs\Antigravity\bin;C:\Users\Firash\go\bin;C:\Users\Firash\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Firash\AppData\Roaming\Testcontainers Desktop\;C:\Users\Firash\.dotnet\tools;C:\Users\Firash\AppData\Roaming\npm;C:\Program Files (x86)\MongoDB Atlas CLI\' 'HOMEPATH=\Users\Firash' 'SystemRoot=C:\Windows' 'windir=C:\Windows' 'APPDATA=C:\Users\Firash\AppData\Roaming' 'LOCALAPPDATA=C:\Users\Firash\AppData\Local' 'USERPROFILE=C:\Users\Firash' 'TMP=C:\Users\Firash\AppData\Local\Temp' 'TEMP=C:\Users\Firash\AppData\Local\Temp' 'C:\Users\Firash\AppData\Local\trunk\tools\osv-scanner\2.3.3-26eb5d87a2b1eadff549407f90c7517d\osv-scanner.exe' --lockfile=bun.lock --format json)
+  - linter:
+      command: |
+
+      stdin_path: (none)
+      run_from: ""
+      timeout: 0
+      rerun: ""
+      exit_status: exited
+      exit_code: 0
+      stdout: (none)
+      stderr: (none)
+    parser: |
+      (none)

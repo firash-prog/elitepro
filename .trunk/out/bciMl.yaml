@@ -1,0 +1,38 @@
+trunk_cli_version: 1.25.0
+title: eslint exited with exit_code=2
+report:
+  - eslint exited with exit_code=2
+  - linter:
+      command: |
+        'C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin\sh.exe' 'C:\Users\Firash\AppData\Local\trunk\tools\eslint\10.0.2-a8efb8f208b81c4bcabea0b35bf30555/node_modules/.bin\eslint' --output-file C:/Users/Firash/AppData/Local/Temp/trunk/bmr1bic/lCu25rCPtZ20 --format json 'src\components\ui\sidebar.tsx'
+      stdin_path: (none)
+      run_from: F:\585\elitepro\.trunk\tmp\trunk\jmbmfta\5oj4jh3\
+      timeout: 10m
+      rerun: (cd F:\585\elitepro\.trunk\tmp\trunk\jmbmfta\5oj4jh3\; env -i 'COMSPEC=C:\Windows\system32\cmd.exe' HOME= 'NODE_PATH=C:\Users\Firash\AppData\Local\trunk\tools\eslint\10.0.2-a8efb8f208b81c4bcabea0b35bf30555/node_modules' 'PATH=C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Users\Firash\AppData\Local\trunk\tools\eslint\10.0.2-a8efb8f208b81c4bcabea0b35bf30555/node_modules/.bin;C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin;C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c;C:\Users\Firash\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\Firash\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Go\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Git\cmd;C:\Users\Firash\.local\bin;C:\Users\Firash\AppData\Local\Microsoft\WindowsApps;C:\Users\Firash\AppData\Local\GitHubDesktop\bin;C:\Users\Firash\AppData\Local\Programs\Antigravity\bin;C:\Users\Firash\go\bin;C:\Users\Firash\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Firash\AppData\Roaming\Testcontainers Desktop\;C:\Users\Firash\.dotnet\tools;C:\Users\Firash\AppData\Roaming\npm;C:\Program Files (x86)\MongoDB Atlas CLI\;c:\Users\Firash\.cache\trunk\launcher' 'C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin\sh.exe' 'C:\Users\Firash\AppData\Local\trunk\tools\eslint\10.0.2-a8efb8f208b81c4bcabea0b35bf30555/node_modules/.bin\eslint' --output-file C:/Users/Firash/AppData/Local/Temp/trunk/bmr1bic/lCu25rCPtZ20 --format json 'src\components\ui\sidebar.tsx')
+      affects_cache:
+        - package.json
+        - tsconfig.json
+      direct_configs:
+        - eslint.config.mjs
+      exit_status: exited
+      exit_code: 2
+      stdout: (none)
+      stderr: |
+
+        Oops! Something went wrong! :(
+
+        ESLint: 10.0.2
+
+        Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@eslint/eslintrc' imported from F:\585\elitepro\.trunk\tmp\trunk\jmbmfta\5oj4jh3\eslint.config.mjs
+            at Object.getPackageJSONURL (node:internal/modules/package_json_reader:256:9)
+            at packageResolve (node:internal/modules/esm/resolve:768:81)
+            at moduleResolve (node:internal/modules/esm/resolve:854:18)
+            at defaultResolve (node:internal/modules/esm/resolve:984:11)
+            at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+            at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+            at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+            at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+            at ModuleJob._link (node:internal/modules/esm/module_job:137:49)
+
+    parser: |
+      (none)
