@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import ThreeBackground from "./ThreeBackground";
+import { WindingPath } from "./WindingPath";
 
 /**
  * GlobalCanvas Component
@@ -88,6 +89,7 @@ export default function GlobalCanvas() {
   return (
     <>
       <ThreeBackground />
+      <WindingPath />
 
       {/* Background WebGL Container (Legacy gradients as fallback or overlay) */}
       <div
@@ -99,8 +101,8 @@ export default function GlobalCanvas() {
           className="absolute w-[150vw] h-[150vh] transition-transform duration-1000 ease-out opacity-20 mix-blend-overlay"
           style={{
             left: "-25%",
-            top: "-25%",
-            background: `radial-gradient(circle at center, #75cdd6 0%, transparent 70%)`,
+            bottom: "-10%",
+            background: `radial-gradient(circle at center, #75cdd6 0%, #183969 70%)`,
             transform: `translate3d(${(mousePos.x - windowSize.width / 2) * 0.05}px, ${(mousePos.y - windowSize.height / 2) * 0.05}px, 0)`,
             filter: "blur(120px)",
           }}
@@ -136,9 +138,17 @@ export default function GlobalCanvas() {
         </div>
       </div>
 
+      {/* Scanline Overlay */}
+      <div className="fixed inset-0 z-[15] pointer-events-none opacity-[0.03] mix-blend-overlay"
+           style={{
+             backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 1px, #fff 1px, #fff 2px)',
+             backgroundSize: '100% 3px'
+           }}
+      />
+
       {/* Grain overlay */}
       <div
-        className="fixed inset-0 z-[10] opacity-[0.03] pointer-events-none"
+        className="fixed inset-0 z-[10] opacity-[0.05] pointer-events-none mix-blend-soft-light"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
         }}

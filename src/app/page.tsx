@@ -10,17 +10,21 @@ import GuidingPrinciples from "@/components/sections/GuidingPrinciples";
 import PersonalPerspectives from "@/components/sections/PersonalPerspectives";
 import AlephPreview from "@/components/sections/AlephPreview";
 
+import { CinematicContainer } from "@/components/layout/CinematicContainer";
+
 export default function Home() {
   return (
     <>
       <SplashScreen />
       <Header />
-      <Hero />
-      <VisionScroll />
-      <Technologies />
-      <GuidingPrinciples />
-      <PersonalPerspectives />
-      <AlephPreview />
+      <CinematicContainer>
+        <Hero />
+        <VisionScroll />
+        <Technologies />
+        <GuidingPrinciples />
+        <PersonalPerspectives />
+        <AlephPreview />
+      </CinematicContainer>
     </>
   );
 }

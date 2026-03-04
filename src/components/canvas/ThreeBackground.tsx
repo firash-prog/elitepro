@@ -18,9 +18,9 @@ function AnimatedMesh(props: any) {
   const uniforms = useMemo(
     () => ({
       uTime: { value: 0 },
-      uColor1: { value: new THREE.Color("#051622") },
-      uColor2: { value: new THREE.Color("#1a4b63") },
-      uColor3: { value: new THREE.Color("#0d2e3f") },
+      uColor1: { value: new THREE.Color("#183969") },
+      uColor2: { value: new THREE.Color("#0c1c34") },
+      uColor3: { value: new THREE.Color("#75cdd6") },
     }),
     []
   );
@@ -83,19 +83,71 @@ function Orbs(props: any) {
     <group {...rest}>
       <mesh position={[5, 2, -5]}>
         <sphereGeometry args={[2, 32, 32]} />
-        <meshBasicMaterial color="#1a4b63" transparent opacity={0.1} />
+        <meshBasicMaterial color="#75cdd6" transparent opacity={0.05} />
       </mesh>
       <mesh position={[-8, -4, -8]}>
         <sphereGeometry args={[3, 32, 32]} />
-        <meshBasicMaterial color="#0d2e3f" transparent opacity={0.05} />
+        <meshBasicMaterial color="#0c1c34" transparent opacity={0.1} />
       </mesh>
     </group>
   );
 }
 
+/**
+ * FloatParticles Component
+ * Upward drifting soft particles
+ */
+function FloatParticles() {
+  const pointsRef = useRef<THREE.Points>(null!);
+  const particleCount = 200;
+
+  const [positions, speeds] = useMemo(() => {
+    const pos = new Float32Array(particleCount * 3);
+    const spd = new Float32Array(particleCount);
+    for (let i = 0; i < particleCount; i++) {
+      pos[i * 3] = (Math.random() - 0.5) * 30; // x
+      pos[i * 3 + 1] = (Math.random() - 0.5) * 30; // y
+      pos[i * 3 + 2] = (Math.random() - 0.5) * 10; // z
+      spd[i] = 0.01 + Math.random() * 0.02;
+    }
+    return [pos, spd];
+  }, []);
+
+  useFrame((state, delta) => {
+    if (!pointsRef.current) return;
+    const array = pointsRef.current.geometry.attributes.position.array as Float32Array;
+    for (let i = 0; i < particleCount; i++) {
+      array[i * 3 + 1] += speeds[i]; // Move up
+      if (array[i * 3 + 1] > 15) array[i * 3 + 1] = -15; // Reset to bottom
+    }
+    pointsRef.current.geometry.attributes.position.needsUpdate = true;
+  });
+
+  return (
+    <points ref={pointsRef}>
+      <bufferGeometry>
+        <bufferAttribute
+          attach="attributes-position"
+          count={particleCount}
+          array={positions}
+          itemSize={3}
+        />
+      </bufferGeometry>
+      <pointsMaterial
+        size={0.05}
+        color="#75cdd6"
+        transparent
+        opacity={0.4}
+        sizeAttenuation
+        blending={THREE.AdditiveBlending}
+      />
+    </points>
+  );
+}
+
 export default function ThreeBackground() {
   return (
-    <div className="fixed inset-0 z-[-1] pointer-events-none bg-[#051622]">
+    <div className="fixed inset-0 z-[-1] pointer-events-none bg-[#183969]">
       <Canvas
         camera={{ position: [0, 0, 10], fov: 45 }}
         gl={{ antialias: true, alpha: true }}
@@ -103,6 +155,7 @@ export default function ThreeBackground() {
         <ambientLight intensity={0.5} />
         <AnimatedMesh />
         <Orbs />
+        <FloatParticles />
       </Canvas>
     </div>
   );

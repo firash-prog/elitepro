@@ -5,26 +5,26 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-background: #051622;
-  --color-foreground: #EBEBEB;
+  --color-background: #183969;
+  --color-foreground: #f1f6f8;
 
-  --color-card: #051622;
-  --color-card-foreground: #EBEBEB;
+  --color-card: #183969;
+  --color-card-foreground: #f1f6f8;
 
-  --color-popover: #051622;
-  --color-popover-foreground: #EBEBEB;
+  --color-popover: #183969;
+  --color-popover-foreground: #f1f6f8;
 
-  --color-primary: #FFFFFF;
-  --color-primary-foreground: #051622;
+  --color-primary: #75cdd6;
+  --color-primary-foreground: #183969;
 
-  --color-secondary: #1a4b63;
-  --color-secondary-foreground: #EBEBEB;
+  --color-secondary: #0c1c34;
+  --color-secondary-foreground: #f1f6f8;
 
-  --color-muted: #1a4b63;
-  --color-muted-foreground: #999999;
+  --color-muted: #223f6d;
+  --color-muted-foreground: #a0aec0;
 
-  --color-accent: #FFFFFF;
-  --color-accent-foreground: #051622;
+  --color-accent: #75cdd6;
+  --color-accent-foreground: #183969;
 
   --color-destructive: #ef4444;
   --color-destructive-foreground: #fafafa;
@@ -86,20 +86,20 @@
   }
 
   :root {
-    --background: #051622;
-    --foreground: #EBEBEB;
-    --card: #051622;
-    --card-foreground: #EBEBEB;
-    --popover: #051622;
-    --popover-foreground: #EBEBEB;
-    --primary: #FFFFFF;
-    --primary-foreground: #051622;
-    --secondary: #1a4b63;
-    --secondary-foreground: #EBEBEB;
-    --muted: #1a4b63;
-    --muted-foreground: #999999;
-    --accent: #FFFFFF;
-    --accent-foreground: #051622;
+    --background: #183969;
+    --foreground: #f1f6f8;
+    --card: #183969;
+    --card-foreground: #f1f6f8;
+    --popover: #183969;
+    --popover-foreground: #f1f6f8;
+    --primary: #75cdd6;
+    --primary-foreground: #183969;
+    --secondary: #0c1c34;
+    --secondary-foreground: #f1f6f8;
+    --muted: #223f6d;
+    --muted-foreground: #a0aec0;
+    --accent: #75cdd6;
+    --accent-foreground: #183969;
     --destructive: #ef4444;
     --destructive-foreground: #fafafa;
     --border: rgba(255, 255, 255, 0.15);
@@ -132,24 +132,26 @@
   }
 
   h1, .hero-heading {
-    font-size: 5rem;
-    font-weight: 300;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
+    font-size: 21.33vw; /* Large cinematic scale */
+    font-weight: 200;
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
   }
 
   h2, .section-heading {
-    font-size: 3.5rem;
-    font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: -0.01em;
+    font-size: 12vw;
+    font-weight: 250;
+    line-height: 1.0;
+    letter-spacing: -0.03em;
   }
 
   .text-label {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 500;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
+    color: var(--accent);
   }
 
   .text-body-large {
@@ -255,7 +257,11 @@
   }
 
   .parallax-text {
-    transition: transform 0.1s ease-out;
+    transition: transform 0.1s cubic-bezier(.645,.045,.355,1);
+  }
+
+  .ease-cinematic {
+    transition-timing-function: cubic-bezier(.645,.045,.355,1);
   }
 
   .mask-fade-edges {
