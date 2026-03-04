@@ -73,20 +73,15 @@ const Hero = () => {
           </p>
         </motion.div>
 
-        <motion.a
-          href="/vision"
-          className="group relative flex flex-col items-center gap-4 mt-8"
-          variants={itemVariants}
-        >
-          <div className="relative flex items-center justify-center">
-            <div className="w-[8px] h-[8px] rounded-full bg-accent transition-transform duration-500 group-hover:scale-150" />
-            <div className="absolute w-[40px] h-[40px] border border-accent/20 rounded-full transition-all duration-500 group-hover:scale-125 group-hover:border-accent/50" />
-            <div className="absolute w-[60px] h-[60px] border border-accent/5 rounded-full transition-all duration-700 group-hover:scale-150" />
-          </div>
-          <span className="text-label text-white/50 group-hover:text-white transition-colors duration-300">
-            Explore Vision
-          </span>
-        </motion.a>
+        <motion.div variants={itemVariants} className="mt-4">
+          <button 
+            onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
+            className="btn-primary group"
+          >
+            <span className="relative z-10">Start your journey</span>
+            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+          </button>
+        </motion.div>
       </motion.div>
 
       {/* Background divider line (Minimalist) */}

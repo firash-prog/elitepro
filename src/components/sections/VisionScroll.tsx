@@ -185,28 +185,29 @@ const Scene3 = ({ progress }: { progress: any }) => {
             style={{ pathLength: useTransform(progress, [0.85, 0.95], [0, 1]) }}
           />
         </svg>
-        <div className="relative w-72 h-72 mx-auto">
-          {/* Ecosystem SVG concept */}
-          <svg className="ecosystem-svg w-full h-full overflow-visible" viewBox="0 0 100 100">
-            {[...Array(9)].map((_, i) => (
-              <motion.circle
-                key={i}
-                cx="50"
-                cy="50"
-                r={20 + i * 4}
-                fill="none"
-                stroke="white"
-                strokeWidth="0.2"
-                strokeOpacity={0.15}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                style={{
-                  rotate: i * 40,
-                  scale: useTransform(progress, [0.85, 1], [0.8, 1])
-                }}
-              />
-            ))}
-          </svg>
+        <div className="relative w-[400px] h-[400px] mx-auto flex items-center justify-center">
+          {/* Ecosystem SVG concept - Concentric Rotating Mandala */}
+          <motion.div
+            className="absolute inset-0"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+          >
+            <svg className="w-full h-full opacity-20" viewBox="0 0 100 100">
+              {[...Array(12)].map((_, i) => (
+                <g key={i} style={{ transform: `rotate(${i * 30}deg)`, transformOrigin: '50% 50%' }}>
+                  <circle cx="50" cy="20" r="0.5" fill="white" />
+                  <circle cx="50" cy="30" r="0.4" fill="white" />
+                  <line x1="50" y1="20" x2="50" y2="30" stroke="white" strokeWidth="0.1" />
+                </g>
+              ))}
+              <circle cx="50" cy="50" r="10" fill="none" stroke="white" strokeWidth="0.05" />
+              <circle cx="50" cy="50" r="25" fill="none" stroke="white" strokeWidth="0.05" />
+            </svg>
+          </motion.div>
+
+          <div className="relative z-10 text-[2.5rem] font-extralight tracking-[0.1em] text-white/90">
+            CONNECTED
+          </div>
         </div>
       </div>
     </motion.div>
@@ -266,17 +267,8 @@ interface ContentBlockProps {
 }
 
 const ContentBlock = ({ label, paragraph, progress, range }: ContentBlockProps) => {
-  // Expand the fade in/out points slightly for smoother transitions
-  const fadeStart = range[0];
-  const fadePeaked = range[0] + 0.05;
-  const fadeEnd = range[1] - 0.05;
-  const fadeOut = range[1];
-
-  const opacity = useTransform(progress, [fadeStart, fadePeaked, fadeEnd, fadeOut], [0, 1, 1, 0]);
-  const y = useTransform(progress, [fadeStart, fadeOut], [40, -40]);
-
-  // Split paragraph into words for staggered animation
-  const words = paragraph.split(" ");
+  const opacity = useTransform(progress, [range[0], range[0] + 0.1, range[1] - 0.1, range[1]], [0, 1, 1, 0]);
+  const y = useTransform(progress, [range[0], range[1]], [40, -40]);
 
   return (
     <motion.div
@@ -286,34 +278,12 @@ const ContentBlock = ({ label, paragraph, progress, range }: ContentBlockProps) 
       <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 md:grid-cols-[40%_60%] gap-10 items-end">
         <div className="flex flex-col gap-8">
           <div className="flex items-center gap-3">
-            <motion.span
-              animate={{ scale: [1, 1.5, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="dot-indicator w-1.5 h-1.5 bg-white rounded-full shrink-0"
-            />
+            <div className="w-1.5 h-1.5 bg-white rounded-full shrink-0 shadow-[0_0_10px_white]" />
             <span className="text-label text-[14px] font-medium tracking-[0.2em] uppercase text-white/60">{label}</span>
           </div>
 
-          <div className="text-body-large text-[2rem] md:text-[3rem] font-light leading-[1.2] text-[#EBEBEB] max-w-3xl">
-            {words.map((word, i) => {
-              // Word-specific opacity based on progress
-              const wordStart = fadeStart + (i / words.length) * 0.05;
-              const wordOpacity = useTransform(
-                progress,
-                [wordStart, wordStart + 0.02, fadeEnd, fadeOut],
-                [0, 1, 1, 0]
-              );
-
-              return (
-                <motion.span
-                  key={i}
-                  style={{ opacity: wordOpacity }}
-                  className="inline-block mr-[0.3em]"
-                >
-                  {word}
-                </motion.span>
-              );
-            })}
+          <div className="text-body-large text-[2rem] md:text-[3rem] font-extralight leading-[1.2] text-[#EBEBEB] max-w-3xl">
+            {paragraph}
           </div>
         </div>
         <div className="hidden md:block" />

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import { motion, useScroll, useTransform, useMotionValue, useSpring } from 'framer-motion';
 import ThreeBackground from "./ThreeBackground";
 import { WindingPath } from "./WindingPath";
 
@@ -12,23 +13,27 @@ import { WindingPath } from "./WindingPath";
 export default function GlobalCanvas() {
   const containerRef = useRef<HTMLDivElement>(null);
   const cursorRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll();
+  const pathProgress = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
+  // Use MotionValues for high-performance reactive updates without re-renders
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+  const smoothMouseX = useSpring(mouseX, { damping: 20, stiffness: 150 });
+  const smoothMouseY = useSpring(mouseY, { damping: 20, stiffness: 150 });
+
   const dotRef = useRef<HTMLDivElement>(null);
   const outlineRef = useRef<HTMLDivElement>(null);
 
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isClicking, setIsClicking] = useState(false);
   const [hoverState, setHoverState] = useState<"default" | "scale" | "hide" | "arrow">("default");
   const [mounted, setMounted] = useState(false);
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
 
-  // Use a ref for lerped mouse position to make cursor movement smooth
-  const lerpedMousePos = useRef({ x: 0, y: 0 });
-
   useEffect(() => {
     if (typeof window === "undefined") return;
     setMounted(true);
 
-    // Initial size
     setWindowSize({ width: window.innerWidth, height: window.innerHeight });
 
     const handleResize = () => {
@@ -36,52 +41,46 @@ export default function GlobalCanvas() {
     };
 
     const handleMouseMove = (e: MouseEvent) => {
-      setMousePos({ x: e.clientX, y: e.clientY });
+      mouseX.set(e.clientX);
+      mouseY.set(e.clientY);
 
       const target = e.target as HTMLElement;
       if (!target) return;
 
       const closestCursorAttr = target.closest("[data-cursor]") as HTMLElement;
+      let nextState: "default" | "scale" | "hide" | "arrow" = "default";
 
       if (closestCursorAttr) {
-        const type = closestCursorAttr.getAttribute("data-cursor") as any;
-        setHoverState(type || "default");
+        nextState = (closestCursorAttr.getAttribute("data-cursor") as any) || "default";
       } else {
         const isInteractive = target.closest("a, button, input, textarea, [role='button']");
-        setHoverState(isInteractive ? "scale" : "default");
+        nextState = isInteractive ? "scale" : "default";
       }
+
+      setHoverState((prev) => prev !== nextState ? nextState : prev);
     };
 
     const handleMouseDown = () => setIsClicking(true);
     const handleMouseUp = () => setIsClicking(false);
 
-    let rafId: number;
-    const updateCursor = () => {
-      const lerp = (start: number, end: number, factor: number) => start + (end - start) * factor;
-      lerpedMousePos.current.x = lerp(lerpedMousePos.current.x, mousePos.x, 0.15);
-      lerpedMousePos.current.y = lerp(lerpedMousePos.current.y, mousePos.y, 0.15);
-
-      if (cursorRef.current) {
-        cursorRef.current.style.transform = `translate3d(${lerpedMousePos.current.x}px, ${lerpedMousePos.current.y}px, 0)`;
-      }
-      rafId = requestAnimationFrame(updateCursor);
-    };
-
     window.addEventListener("resize", handleResize);
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove, { passive: true });
     window.addEventListener("mousedown", handleMouseDown);
     window.addEventListener("mouseup", handleMouseUp);
-
-    rafId = requestAnimationFrame(updateCursor);
 
     return () => {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("mousedown", handleMouseDown);
       window.removeEventListener("mouseup", handleMouseUp);
-      cancelAnimationFrame(rafId);
     };
-  }, [mousePos]);
+  }, []);
+
+  // Smoothed parallax calculation
+  const parallaxX = useTransform(smoothMouseX, (x) => (x - windowSize.width / 2) * 0.02);
+  const parallaxY = useTransform(smoothMouseY, (y) => (y - windowSize.height / 2) * 0.02);
+  const flowerScale = useTransform(smoothMouseX, (x) => 1 + (Math.abs(x - windowSize.width / 2) / Math.max(windowSize.width, 1)) * 0.1);
+
 
   // Prevent SSR rendering of browser-only logic
   if (!mounted) return null;
@@ -96,25 +95,26 @@ export default function GlobalCanvas() {
         className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none"
         ref={containerRef}
       >
-        {/* Moving Light Source (Parallax effect based on mouse) */}
-        <div
-          className="absolute w-[150vw] h-[150vh] transition-transform duration-1000 ease-out opacity-20 mix-blend-overlay"
+        {/* Moving Light Source (Parallax effect based on mouse - smoothed) */}
+        <motion.div
+          className="absolute w-[150vw] h-[150vh] opacity-20 mix-blend-overlay"
           style={{
             left: "-25%",
             bottom: "-10%",
             background: `radial-gradient(circle at center, #75cdd6 0%, #183969 70%)`,
-            transform: `translate3d(${(mousePos.x - windowSize.width / 2) * 0.05}px, ${(mousePos.y - windowSize.height / 2) * 0.05}px, 0)`,
             filter: "blur(120px)",
+            x: parallaxX,
+            y: parallaxY,
           }}
         />
 
         {/* Ecosystem Seed / Flower of Life Overlay (SVG) */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-10">
-          <svg
+          <motion.svg
             viewBox="0 0 1000 1000"
-            className="w-[80vh] h-[80vh] transition-transform duration-500 ease-out"
+            className="w-[80vh] h-[80vh]"
             style={{
-              transform: `scale(${1 + (Math.abs(mousePos.x - windowSize.width / 2) / Math.max(windowSize.width, 1)) * 0.1})`
+              scale: flowerScale
             }}
           >
             <defs>
@@ -140,10 +140,10 @@ export default function GlobalCanvas() {
 
       {/* Scanline Overlay */}
       <div className="fixed inset-0 z-[15] pointer-events-none opacity-[0.03] mix-blend-overlay"
-           style={{
-             backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 1px, #fff 1px, #fff 2px)',
-             backgroundSize: '100% 3px'
-           }}
+        style={{
+          backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 1px, #fff 1px, #fff 2px)',
+          backgroundSize: '100% 3px'
+        }}
       />
 
       {/* Grain overlay */}
@@ -155,10 +155,13 @@ export default function GlobalCanvas() {
       />
 
       {/* Custom Cursor */}
-      <div
+      <motion.div
         className={`cursor fixed top-0 left-0 z-[9999] pointer-events-none will-change-transform ${hoverState === 'hide' ? 'opacity-0' : 'opacity-100'}`}
-        ref={cursorRef}
         style={{
+          x: smoothMouseX,
+          y: smoothMouseY,
+          translateX: "-50%",
+          translateY: "-50%",
           transition: 'opacity 0.3s ease',
         }}
       >

@@ -6,3 +6,7 @@
 [03-04 04:04:18] [client.cc:19] GRPC Failed (error code INTERNAL): Filesystem error: in create_hard_link: the system cannot move the file to a different disk drive. ["f:\585\elitepro\.env.example"] ["c:\users\firash\appdata\local\temp\trunk\atsr4gf\.env.example"]
 [03-04 04:04:18] [server.cc:56] User exception in the request_worker thread: Filesystem error: in create_hard_link: the system cannot move the file to a different disk drive. ["f:\585\elitepro\.env.example"] ["c:\users\firash\appdata\local\temp\trunk\atsr4gf\.env.example"]
 [03-04 04:04:18] [shared_server_context.hh:133] Message processing failed: Filesystem error: in create_hard_link: the system cannot move the file to a different disk drive. ["f:\585\elitepro\.env.example"] ["c:\users\firash\appdata\local\temp\trunk\atsr4gf\.env.example"]
+[03-04 05:01:07] [login.cc:52] GetUserRequest failed with status 16: No session provided 
+[03-04 05:07:27] [client.cc:19] GRPC Failed (error code INTERNAL): Can not detect upstream commit
+[03-04 05:07:27] [submission_buffer.cc:179] diagnostics buffer 6: Submission failed: Can not detect upstream commit
+[03-04 05:07:27] [shared_server_context.hh:133] Message processing failed: Can not detect upstream commit

@@ -1,0 +1,54 @@
+trunk_cli_version: 1.25.0
+title: prettier exited with exit_code=2
+report:
+  - prettier exited with exit_code=2
+  - linter:
+      command: |
+        'C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin\sh.exe' 'C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/node_modules/.bin\prettier' -w 'src\app\page.tsx' 'src\components\canvas\AlephModel.tsx' 'src\components\canvas\GlobalCanvas.tsx' 'src\components\canvas\ThreeBackground.tsx' 'src\components\canvas\WindingPath.tsx' 'src\components\layout\CinematicContainer.tsx' 'src\components\sections\AlephPreview.tsx' 'src\components\sections\Footer.tsx' 'src\components\sections\Header.tsx' 'src\components\sections\Hero.tsx' 'src\components\sections\SplashScreen.tsx' 'src\components\sections\Technologies.tsx' 'src\components\sections\VisionScroll.tsx'
+      stdin_path: (none)
+      run_from: F:\585\elitepro\.trunk\tmp\trunk\eynhs15\idvnjyy\
+      timeout: 10m
+      rerun: (cd F:\585\elitepro\.trunk\tmp\trunk\eynhs15\idvnjyy\; env -i 'NODE_PATH=C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/node_modules' HOME= 'COMSPEC=C:\Windows\system32\cmd.exe' 'PATH=C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/node_modules/.bin;C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin;C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c;C:\Users\Firash\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\Firash\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Go\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Git\cmd;C:\Users\Firash\.local\bin;C:\Users\Firash\AppData\Local\Microsoft\WindowsApps;C:\Users\Firash\AppData\Local\GitHubDesktop\bin;C:\Users\Firash\AppData\Local\Programs\Antigravity\bin;C:\Users\Firash\go\bin;C:\Users\Firash\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Firash\AppData\Roaming\Testcontainers Desktop\;C:\Users\Firash\.dotnet\tools;C:\Users\Firash\AppData\Roaming\npm;C:\Program Files (x86)\MongoDB Atlas CLI\' 'C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin\sh.exe' 'C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/node_modules/.bin\prettier' -w 'src\app\page.tsx' 'src\components\canvas\AlephModel.tsx' 'src\components\canvas\GlobalCanvas.tsx' 'src\components\canvas\ThreeBackground.tsx' 'src\components\canvas\WindingPath.tsx' 'src\components\layout\CinematicContainer.tsx' 'src\components\sections\AlephPreview.tsx' 'src\components\sections\Footer.tsx' 'src\components\sections\Header.tsx' 'src\components\sections\Hero.tsx' 'src\components\sections\SplashScreen.tsx' 'src\components\sections\Technologies.tsx' 'src\components\sections\VisionScroll.tsx')
+      affects_cache:
+        - package.json
+      direct_configs:
+        []
+      exit_status: exited
+      exit_code: 2
+      stdout: |
+        src/app/page.tsx 128ms
+        src/components/canvas/AlephModel.tsx 100ms
+        src/components/canvas/ThreeBackground.tsx 101ms
+        src/components/canvas/WindingPath.tsx 42ms
+        src/components/layout/CinematicContainer.tsx 66ms
+        src/components/sections/AlephPreview.tsx 45ms
+        src/components/sections/Footer.tsx 27ms
+        src/components/sections/Header.tsx 26ms
+        src/components/sections/Hero.tsx 28ms
+        src/components/sections/SplashScreen.tsx 59ms
+        src/components/sections/Technologies.tsx 77ms
+        src/components/sections/VisionScroll.tsx 113ms
+
+      stderr: |
+        [[31merror[39m] src/components/canvas/GlobalCanvas.tsx: SyntaxError: Expected corresponding JSX closing tag for 'motion.svg'. (137:13)
+        [[31merror[39m] [0m [90m 135 |[39m               [33m<[39m[33mcircle[39m [33mcx[39m[33m=[39m[32m"630"[39m [33mcy[39m[33m=[39m[32m"575"[39m [33mr[39m[33m=[39m[32m"150"[39m [33m/[39m[33m>[39m
+        [[31merror[39m]  [90m 136 |[39m             [33m<[39m[33m/[39m[33mg[39m[33m>[39m
+        [[31merror[39m] [31m[1m>[22m[39m[90m 137 |[39m           [33m<[39m[33m/[39m[33msvg[39m[33m>[39m
+        [[31merror[39m]  [90m     |[39m             [31m[1m^[22m[39m
+        [[31merror[39m]  [90m 138 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+        [[31merror[39m]  [90m 139 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+        [[31merror[39m]  [90m 140 |[39m[0m
+
+    parser:
+      command: |
+        'C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070\python3.exe' C:/Users/Firash/AppData/Local/trunk/plugins/https---github-com-trunk-io-plugins/v1.7.5-4ebadccd80b22638/linters/prettier/prettier_to_sarif.py 2
+      stdin_path: (none)
+      run_from: F:\585\elitepro\.trunk\tmp\trunk\eynhs15\idvnjyy\
+      timeout: 10m
+      rerun: (cd F:\585\elitepro\.trunk\tmp\trunk\eynhs15\idvnjyy\; env -i 'Path=C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Go\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Git\cmd;C:\Users\Firash\.local\bin;C:\Users\Firash\AppData\Local\Microsoft\WindowsApps;C:\Users\Firash\AppData\Local\GitHubDesktop\bin;C:\Users\Firash\AppData\Local\Programs\Antigravity\bin;C:\Users\Firash\go\bin;C:\Users\Firash\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Firash\AppData\Roaming\Testcontainers Desktop\;C:\Users\Firash\.dotnet\tools;C:\Users\Firash\AppData\Roaming\npm;C:\Program Files (x86)\MongoDB Atlas CLI\' 'COMSPEC=C:\Windows\system32\cmd.exe' 'NODE_PATH=C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/node_modules' 'PATH=C:\Users\Firash\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\Firash\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/bin;C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/Scripts;C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070/bin;C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070;C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4/node_modules/.bin;C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin;C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c;C:\Users\Firash\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\Firash\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Go\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Git\cmd;C:\Users\Firash\.local\bin;C:\Users\Firash\AppData\Local\Microsoft\WindowsApps;C:\Users\Firash\AppData\Local\GitHubDesktop\bin;C:\Users\Firash\AppData\Local\Programs\Antigravity\bin;C:\Users\Firash\go\bin;C:\Users\Firash\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Firash\AppData\Roaming\Testcontainers Desktop\;C:\Users\Firash\.dotnet\tools;C:\Users\Firash\AppData\Roaming\npm;C:\Program Files (x86)\MongoDB Atlas CLI\' 'SYSTEMROOT=C:\Windows' HOME= 'VIRTUAL_ENV=C:\Users\Firash\AppData\Local\trunk\tools\prettier\3.8.1-f304fa75eba9180d9f5e0bbf577997e4' PYTHONUTF8=1 'HOMEPATH=\Users\Firash' 'SystemRoot=C:\Windows' 'windir=C:\Windows' 'APPDATA=C:\Users\Firash\AppData\Roaming' 'LOCALAPPDATA=C:\Users\Firash\AppData\Local' 'USERPROFILE=C:\Users\Firash' 'TMP=C:\Users\Firash\AppData\Local\Temp' 'TEMP=C:\Users\Firash\AppData\Local\Temp' 'C:\Users\Firash\AppData\Local\trunk\tools\python\3.10.8-2211cb108575de2785d77a26a1f8d070\python3.exe' C:/Users/Firash/AppData/Local/trunk/plugins/https---github-com-trunk-io-plugins/v1.7.5-4ebadccd80b22638/linters/prettier/prettier_to_sarif.py 2)
+      exit_status: exited
+      exit_code: 2
+      stdout: |
+        Unexpected output from prettier
+
+      stderr: (none)

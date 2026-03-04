@@ -1,0 +1,47 @@
+trunk_cli_version: 1.25.0
+title: eslint exited with exit_code=2
+report:
+  - eslint exited with exit_code=2
+  - ~
+  - linter:
+      command: |
+        'C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin\sh.exe' 'C:\Users\Firash\AppData\Local\trunk\tools\eslint\10.0.2-a8efb8f208b81c4bcabea0b35bf30555/node_modules/.bin\eslint' --output-file C:/Users/Firash/AppData/Local/Temp/trunk/5orpown/O6uOgkfgbZIC --format json 'src\components\sections\Header.tsx'
+      stdin_path: (none)
+      run_from: F:\585\elitepro\.trunk\tmp\trunk\cuzu4jm\wdmy2w6\
+      timeout: 10m
+      rerun: (cd F:\585\elitepro\.trunk\tmp\trunk\cuzu4jm\wdmy2w6\; env -i HOME= 'NODE_PATH=C:\Users\Firash\AppData\Local\trunk\tools\eslint\10.0.2-a8efb8f208b81c4bcabea0b35bf30555/node_modules' 'COMSPEC=C:\Windows\system32\cmd.exe' 'PATH=C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Users\Firash\AppData\Local\trunk\tools\eslint\10.0.2-a8efb8f208b81c4bcabea0b35bf30555/node_modules/.bin;C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c/bin;C:\Users\Firash\AppData\Local\trunk\tools\node\22.16.0-12da8a4c27b144aedaf7d975e067667c;C:\Users\Firash\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\Users\Firash\AppData\Local\trunk\tools\git-bash\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Go\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\cursor\resources\app\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Git\cmd;C:\Users\Firash\.local\bin;C:\Users\Firash\AppData\Local\Microsoft\WindowsApps;C:\Users\Firash\AppData\Local\GitHubDesktop\bin;C:\Users\Firash\AppData\Local\Programs\Antigravity\bin;C:\Users\Firash\go\bin;C:\Users\Firash\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Firash\AppData\Roaming\Testcontainers Desktop\;C:\Users\Firash\.dotnet\tools;C:\Users\Firash\AppData\Roaming\npm;C:\Program Files (x86)\MongoDB Atlas CLI\' 'C:/Users/Firash/AppData/Local/trunk/tools/git-bash/2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin\sh.exe' 'C:\Users\Firash\AppData\Local\trunk\tools\eslint\10.0.2-a8efb8f208b81c4bcabea0b35bf30555/node_modules/.bin\eslint' --output-file C:/Users/Firash/AppData/Local/Temp/trunk/5orpown/O6uOgkfgbZIC --format json 'src\components\sections\Header.tsx')
+      affects_cache:
+        - package.json
+        - tsconfig.json
+      direct_configs:
+        - eslint.config.mjs
+      exit_status: exited
+      exit_code: 2
+      stdout: (none)
+      stderr: |
+
+        Oops! Something went wrong! :(
+
+        ESLint: 10.0.2
+
+        TypeError: Converting circular structure to JSON
+            --> starting at object with constructor 'Object'
+            |     property 'configs' -> object with constructor 'Object'
+            |     property 'flat' -> object with constructor 'Object'
+            |     ...
+            |     property 'plugins' -> object with constructor 'Object'
+            --- property 'react' closes the circle
+        Referenced from: 
+            at JSON.stringify (<anonymous>)
+            at file:///F:/585/elitepro/node_modules/@eslint/eslintrc/lib/shared/config-validator.js:308:45
+            at Array.map (<anonymous>)
+            at ConfigValidator.formatErrors (file:///F:/585/elitepro/node_modules/@eslint/eslintrc/lib/shared/config-validator.js:299:23)
+            at ConfigValidator.validateConfigSchema (file:///F:/585/elitepro/node_modules/@eslint/eslintrc/lib/shared/config-validator.js:330:84)
+            at ConfigArrayFactory._normalizeConfigData (file:///F:/585/elitepro/node_modules/@eslint/eslintrc/lib/config-array-factory.js:676:19)
+            at ConfigArrayFactory._loadConfigData (file:///F:/585/elitepro/node_modules/@eslint/eslintrc/lib/config-array-factory.js:641:21)
+            at ConfigArrayFactory._loadExtendedShareableConfig (file:///F:/585/elitepro/node_modules/@eslint/eslintrc/lib/config-array-factory.js:946:21)
+            at ConfigArrayFactory._loadExtends (file:///F:/585/elitepro/node_modules/@eslint/eslintrc/lib/config-array-factory.js:814:25)
+            at ConfigArrayFactory._normalizeObjectConfigDataBody (file:///F:/585/elitepro/node_modules/@eslint/eslintrc/lib/config-array-factory.js:752:25)
+
+    parser: |
+      (none)

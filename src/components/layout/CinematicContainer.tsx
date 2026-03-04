@@ -58,27 +58,36 @@ const SectionWrapper = ({ children, index, total, progress }: SectionWrapperProp
 
     const opacity = useTransform(
         progress,
-        [sectionProgress - 0.1, sectionProgress, nextSectionProgress - 0.1, nextSectionProgress],
+        [sectionProgress - 0.05, sectionProgress, nextSectionProgress - 0.05, nextSectionProgress],
         [0, 1, 1, 0]
     );
 
     const scale = useTransform(
         progress,
         [sectionProgress - 0.1, sectionProgress, nextSectionProgress],
-        [0.8, 1, 1.2]
+        [0.9, 1, 1.1]
     );
 
     const zIndex = useTransform(
         progress,
-        [sectionProgress, nextSectionProgress],
-        [total - index, total - index - 1]
+        [sectionProgress - 0.01, sectionProgress, nextSectionProgress - 0.01],
+        [total - index, total - index + 10, total - index]
     );
 
     const blur = useTransform(
         progress,
-        [sectionProgress - 0.1, sectionProgress, nextSectionProgress - 0.1, nextSectionProgress],
-        ["10px", "0px", "0px", "20px"]
+        [sectionProgress - 0.05, sectionProgress, nextSectionProgress - 0.05, nextSectionProgress],
+        ["20px", "0px", "0px", "20px"]
     );
+
+    // Derived state for pointer events to avoid React state-synchronization lag
+    const [active, setActive] = React.useState(false);
+    React.useEffect(() => {
+        return progress.on("change", (v: number) => {
+            const isActive = v >= sectionProgress - 0.05 && v < nextSectionProgress - 0.05;
+            setActive(isActive);
+        });
+    }, [progress, sectionProgress, nextSectionProgress]);
 
     return (
         <motion.div
@@ -87,12 +96,11 @@ const SectionWrapper = ({ children, index, total, progress }: SectionWrapperProp
                 scale,
                 zIndex,
                 filter: `blur(${blur})`,
+                pointerEvents: active ? "auto" : "none"
             }}
-            className="absolute inset-0 flex items-center justify-center pointer-events-none data-[active=true]:pointer-events-auto"
-            // Use a custom hook or effect to enable pointer events only when section is active
-            data-active={index === Math.floor(progress.get() * total)}
+            className="absolute inset-0 flex items-center justify-center overflow-hidden"
         >
-            <div className="w-full h-full pointer-events-auto">
+            <div className="w-full h-full">
                 {children}
             </div>
         </motion.div>
