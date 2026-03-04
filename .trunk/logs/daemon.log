@@ -91,3 +91,106 @@ cache_enabled: true, num_jobs: 6, session_type: 4, client_id: lsp-proxy, scope: 
 [2026-03-04 05:24:35.416] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
 [2026-03-04 05:24:39.182] [global] [info] [git_source_control.cc:517] Computing merge base between 66d2f78e1fff90f9640d3932d71b1f5b973bc82c and 328f109d7dc6672044776b57fc0375348ccb776e
 [2026-03-04 05:24:39.183] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:24:59.918] [global] [info] [git_source_control.cc:517] Computing merge base between f59c9e8fecb4815b7278fbeb39eb006c349c45a0 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:24:59.918] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:25:19.130] [global] [info] [git_source_control.cc:517] Computing merge base between f59c9e8fecb4815b7278fbeb39eb006c349c45a0 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:25:19.130] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:25:23.043] [global] [info] [git_source_control.cc:517] Computing merge base between f59c9e8fecb4815b7278fbeb39eb006c349c45a0 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:25:23.043] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:25:41.864] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:25:41.865] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:25:46.887] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:25:46.887] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:25:56.321] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:25:56.321] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:25:57.236] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:25:57.236] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:28:18.215] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:28:18.216] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:28:29.347] [global] [info] [runner.cc:154] Executing action trunk-single-player-auto-on-upgrade.schedule.24h+5m
+[2026-03-04 05:28:57.445] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:28:57.445] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:28:58.589] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:28:58.590] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:30:34.029] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:30:34.029] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:30:35.752] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:30:35.752] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:30:56.168] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:30:56.169] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:30:56.761] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:30:56.761] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:30:58.906] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:30:58.906] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:31:21.776] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:31:21.776] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:31:32.039] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:31:32.039] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:31:58.931] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:31:58.931] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:32:00.313] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:32:00.315] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:35:00.938] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:35:00.938] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:35:02.075] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:35:02.075] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:35:45.325] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:35:45.325] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:38:02.305] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:38:02.305] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:38:03.630] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:38:03.631] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:39:12.200] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:39:12.200] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:39:13.414] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:39:13.415] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:40:39.334] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:40:39.334] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:40:40.586] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:40:40.586] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:40:49.983] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:40:49.984] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:40:51.208] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:40:51.208] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:02.298] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:02.298] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:02.813] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:02.814] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:04.168] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:04.168] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:05.090] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:05.090] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:06.215] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:06.215] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:08.097] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:08.097] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:09.871] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:09.871] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:11.915] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:11.915] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:25.274] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:25.274] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:26.526] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:26.527] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:46.891] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:46.891] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:48.092] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:41:48.093] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:42:18.359] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:42:18.359] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:42:19.582] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:42:19.583] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:42:48.703] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:42:48.703] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:42:50.029] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:42:50.029] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:44:05.363] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:44:05.364] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:44:06.610] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:44:06.611] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:44:16.945] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:44:16.946] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:44:29.790] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:44:29.790] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:45:19.494] [global] [info] [git_source_control.cc:517] Computing merge base between c484f0845907a50d41d79ac7c384fc72c9ffeaa9 and 328f109d7dc6672044776b57fc0375348ccb776e
+[2026-03-04 05:45:19.495] [global] [info] [git_source_control.cc:519] Resolved divergent commit as 328f109d7dc6672044776b57fc0375348ccb776e
